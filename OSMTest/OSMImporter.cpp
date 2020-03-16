@@ -60,6 +60,12 @@ void OSMImporter::import(const QString& filename, std::vector<BuildingParam>& bu
 						else if (k == "building") {
 							type = "building";
 						}
+						else if (k == "building:levels") {
+							height = v.toInt() * 3.5f;
+							if (height > 12) {
+								std::cout << "height = " << height << std::endl;
+							}
+						}
 						else if (k == "highway") {
 							type = "highway";
 						}

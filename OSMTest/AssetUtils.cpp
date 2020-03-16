@@ -40,32 +40,21 @@ std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygo
 	std::vector<Vertex> vertices;
 	const int NUM_VERTEX = polygon.size();
 
-	std::vector<float> lengths;
-	lengths.push_back(0);
 	for (int i = 0; i < NUM_VERTEX; i++) {
 		const float& x1 = polygon[i].x;
 		const float& y1 = polygon[i].y;
 		const int next = (i + 1) % NUM_VERTEX;
 		const float& x2 = polygon[next].x;
 		const float& y2 = polygon[next].y;
-		float length = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
-		lengths.push_back(length + lengths[i]);
-	}
-	const float& TOT_LENGTH = lengths[NUM_VERTEX];
+		const float length = glm::length(glm::vec2(x2 - x1, y2 - y1));
 
-	for (int i = 0; i < NUM_VERTEX; i++) {
-		const float& x1 = polygon[i].x;
-		const float& y1 = polygon[i].y;
-		const int next = (i + 1) % NUM_VERTEX;
-		const float& x2 = polygon[next].x;
-		const float& y2 = polygon[next].y;
-		vertices.push_back({ x1, y1, 0, 1 - lengths[i] / TOT_LENGTH, 0 });
-		vertices.push_back({ x2, y2, 0, 1 - lengths[i + 1] / TOT_LENGTH, 0 });
-		vertices.push_back({ x2, y2, height, 1 - lengths[i + 1] / TOT_LENGTH, 1 });
+		vertices.push_back({ x1, y1, 0, 0, 0 });
+		vertices.push_back({ x2, y2, 0, length / 15.0f, 0 });
+		vertices.push_back({ x2, y2, height, length / 15.0f, height / 10.0f });
 
-		vertices.push_back({ x1, y1, 0, 1 - lengths[i] / TOT_LENGTH, 0 });
-		vertices.push_back({ x2, y2, height, 1 - lengths[i + 1] / TOT_LENGTH, 1 });
-		vertices.push_back({ x1, y1, height, 1 - lengths[i] / TOT_LENGTH, 1 });
+		vertices.push_back({ x1, y1, 0, 0, 0 });
+		vertices.push_back({ x2, y2, height, length / 15.0f, height / 10.0f });
+		vertices.push_back({ x1, y1, height, 0, height / 10.0f });
 	}
 
 	return vertices;

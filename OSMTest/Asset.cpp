@@ -26,7 +26,7 @@ void Asset::setTexture(const char* filename)
 		texture->destroy();
 		texture = nullptr;
 	}
-	texture = new QOpenGLTexture(QImage(filename));
+	texture = new QOpenGLTexture(QImage(filename).mirrored());
 }
 
 /**
