@@ -36,31 +36,40 @@ std::vector<Vertex> AssetUtils::createSphere(float radius) {
 	return vertices;
 }
 
-/*
-std::vector<Vertex> AssetUtils::createCube(float edge) {
-	static const GLfloat coords[6][4][3] = {
-		{ { 0.2f, -0.2f, -0.2f }, { -0.2f, -0.2f, -0.2f }, { -0.2f, 0.2f, -0.2f }, { 0.2f, 0.2f, -0.2f } },
-		{ { 0.2f, 0.2f, -0.2f }, { -0.2f, 0.2f, -0.2f }, { -0.2f, 0.2f, 0.2f }, { 0.2f, 0.2f, 0.2f } },
-		{ { 0.2f, -0.2f, 0.2f }, { 0.2f, -0.2f, -0.2f }, { 0.2f, 0.2f, -0.2f }, { 0.2f, 0.2f, 0.2f } },
-		{ { -0.2f, -0.2f, -0.2f }, { -0.2f, -0.2f, 0.2f }, { -0.2f, 0.2f, 0.2f }, { -0.2f, 0.2f, -0.2f } },
-		{ { 0.2f, -0.2f, 0.2f }, { -0.2f, -0.2f, 0.2f }, { -0.2f, -0.2f, -0.2f }, { 0.2f, -0.2f, -0.2f } },
-		{ { -0.2f, -0.2f, 0.2f }, { 0.2f, -0.2f, 0.2f }, { 0.2f, 0.2f, 0.2f }, { -0.2f, 0.2f, 0.2f } }
-	};
+std::vector<Vertex> AssetUtils::createPrism(std::vector<std::pair<float, float>> polygon, float height) {
+	std::vector<Vertex> vertices;
+	const int NUM_VERTEX = polygon.size();
 
-	for (int i = 0; i < 6; i++) {
-		assets[i] = new Asset(program);
-		assets[i]->setTexture(QString("images/side%1.png").arg(i + 1).toUtf8().constData());
-
-		assets[i]->addVertex(coords[i][0][0], coords[i][0][1], coords[i][0][2], 0, 0);
-		assets[i]->addVertex(coords[i][1][0], coords[i][1][1], coords[i][1][2], 1, 0);
-		assets[i]->addVertex(coords[i][2][0], coords[i][2][1], coords[i][2][2], 1, 1);
-
-		assets[i]->addVertex(coords[i][0][0], coords[i][0][1], coords[i][0][2], 0, 0);
-		assets[i]->addVertex(coords[i][2][0], coords[i][2][1], coords[i][2][2], 1, 1);
-		assets[i]->addVertex(coords[i][3][0], coords[i][3][1], coords[i][3][2], 0, 1);
+	std::vector<float> lengths;
+	lengths.push_back(0);
+	for (int i = 0; i < NUM_VERTEX; i++) {
+		const float x1 = polygon[i].first;
+		const float y1 = polygon[i].second;
+		const int next = (i + 1) % NUM_VERTEX;
+		const float x2 = polygon[next].first;
+		const float y2 = polygon[next].second;
+		float length = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+		lengths.push_back(length + lengths[i]);
 	}
+	const float TOT_LENGTH = lengths[NUM_VERTEX];
+
+	for (int i = 0; i < NUM_VERTEX; i++) {
+		const float x1 = polygon[i].first;
+		const float y1 = polygon[i].second;
+		const int next = (i + 1) % NUM_VERTEX;
+		const float x2 = polygon[next].first;
+		const float y2 = polygon[next].second;
+		vertices.push_back({ x1, y1, 0, lengths[i] / TOT_LENGTH, 1 });
+		vertices.push_back({ x2, y2, 0, lengths[i + 1] / TOT_LENGTH, 1 });
+		vertices.push_back({ x2, y2, height, lengths[i + 1] / TOT_LENGTH, 0 });
+
+		vertices.push_back({ x1, y1, 0, lengths[i] / TOT_LENGTH, 1 });
+		vertices.push_back({ x2, y2, height, lengths[i + 1] / TOT_LENGTH, 0 });
+		vertices.push_back({ x1, y1, height, lengths[i] / TOT_LENGTH, 0 });
+	}
+
+	return vertices;
 }
-*/
 
 std::vector<Vertex> AssetUtils::createRectangle(float width, float length) {
 	std::vector<Vertex> vertices;
