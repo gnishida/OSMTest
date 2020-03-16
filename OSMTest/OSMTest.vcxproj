@@ -90,6 +90,7 @@
     <ClCompile Include="MainWindow.cpp" />
     <ClCompile Include="OSMImporter.cpp" />
     <ClCompile Include="RenderingManager.cpp" />
+    <ClCompile Include="UTM.cpp" />
     <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +108,7 @@
     <ClInclude Include="BuildingParam.h" />
     <ClInclude Include="OSMImporter.h" />
     <ClInclude Include="RenderingManager.h" />
+    <ClInclude Include="UTM.h" />
     <ClInclude Include="Vertex.h" />
     <QtMoc Include="GLWidget.h" />
   </ItemGroup>
