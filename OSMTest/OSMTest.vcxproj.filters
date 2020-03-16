@@ -52,6 +52,9 @@
     <ClCompile Include="BuildingParam.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="UTM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="MainWindow.h">
@@ -88,6 +91,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BuildingParam.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UTM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
