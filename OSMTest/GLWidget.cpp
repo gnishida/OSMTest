@@ -92,3 +92,8 @@ void GLWidget::makeObject()
 	renderingManager->addObject("images/side1.png", AssetUtils::createRectangle(0.5, 0.5));
 	renderingManager->addObject("images/earth.jpg", AssetUtils::createSphere(0.35));
 }
+
+void GLWidget::loadOSM(const QString& filename)
+{
+
+}

@@ -34,6 +34,9 @@ protected:
 
 private:
 	void makeObject();
+
+public:
+	void loadOSM(const QString& filename);
 };
 
 #endif

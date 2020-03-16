@@ -1,5 +1,7 @@
 #include "MainWindow.h"
 
+#include <QFileDialog>
+
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
 	ui.setupUi(this);
@@ -10,4 +12,13 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 	setWindowTitle(tr("OSM Test"));
 
 	connect(ui.actionExit, SIGNAL(triggered()), this, SLOT(close()));
+	connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(onOpen()));
+}
+
+void MainWindow::onOpen()
+{
+	QString filename = QFileDialog::getOpenFileName(this, tr("Open OSM file..."), "", tr("OSM Files (*.osm)"));
+	if (filename.isEmpty()) return;
+
+	glWidget.loadOSM(filename);
 }

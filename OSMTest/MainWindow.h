@@ -14,6 +14,9 @@ class MainWindow : public QMainWindow
 public:
 	MainWindow(QWidget *parent = Q_NULLPTR);
 
+public slots:
+	void onOpen();
+
 private:
 	Ui::MainWindowClass ui;
 	GLWidget glWidget;
