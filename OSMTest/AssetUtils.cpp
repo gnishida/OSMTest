@@ -66,13 +66,13 @@ std::vector<Vertex> AssetUtils::createRectangle(float width, float length) {
 	const float x2 = width / 2;
 	const float y1 = -length / 2;
 	const float y2 = length / 2;
-	vertices.push_back({ x1, y1, 0, 1, 0 });
-	vertices.push_back({ x2, y1, 0, 0, 0 });
-	vertices.push_back({ x2, y2, 0, 0, 1 });
+	vertices.push_back({ x1, y1, 0, 0, 0 });
+	vertices.push_back({ x2, y1, 0, 1, 0 });
+	vertices.push_back({ x2, y2, 0, 1, 1 });
 
-	vertices.push_back({ x1, y1, 0, 1, 0 });
-	vertices.push_back({ x2, y2, 0, 0, 1 });
-	vertices.push_back({ x1, y2, 0, 1, 1 });
+	vertices.push_back({ x1, y1, 0, 0, 0 });
+	vertices.push_back({ x2, y2, 0, 1, 1 });
+	vertices.push_back({ x1, y2, 0, 0, 1 });
 
 	return vertices;
 }

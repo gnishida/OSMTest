@@ -98,23 +98,13 @@ void GLWidget::makeObject()
 void GLWidget::loadOSM(const QString& filename)
 {
 	renderingManager->removeObjects();
-	std::vector<BuildingParam> buildingParams;
-	OSMImporter::import(filename, buildingParams);
-	double minx = std::numeric_limits<double>::max();
-	double maxx = std::numeric_limits<double>::min();
-	double miny = std::numeric_limits<double>::max();
-	double maxy = std::numeric_limits<double>::min();
-	for (const auto& buildingParam : buildingParams) {
-		for (const auto& coord : buildingParam.footprint) {
-			minx = std::min((double)coord.x, minx);
-			maxx = std::max((double)coord.x, maxx);
-			miny = std::min((double)coord.y, miny);
-			maxy = std::max((double)coord.y, maxy);
-		}
-	}
 
-	double translate_x = (minx + maxx) / 2;
-	double translate_y = (miny + maxy) / 2;
+	float minX, minY, maxX, maxY;
+	std::vector<BuildingParam> buildingParams;
+	OSMImporter::import(filename, minX, minY, maxX, maxY, buildingParams);
+
+	double translate_x = (minX + maxX) / 2;
+	double translate_y = (minY + maxY) / 2;
 
 	for (auto& buildingParam : buildingParams) {
 		for (auto& coord : buildingParam.footprint) {
@@ -122,6 +112,8 @@ void GLWidget::loadOSM(const QString& filename)
 			coord.y = coord.y - translate_y;
 		}
 	}
+
+	renderingManager->addObject("images/shin_urayasu.png", AssetUtils::createRectangle(maxX - minX, maxY - minY));
 
 	for (const auto& buildingParam : buildingParams) {
 		renderingManager->addObject("images/facade.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));

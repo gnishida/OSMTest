@@ -14,7 +14,7 @@ OSMImporter::OSMImporter() {
 OSMImporter::~OSMImporter() {
 }
 
-void OSMImporter::import(const QString& filename, std::vector<BuildingParam>& buildingParams) {
+void OSMImporter::import(const QString& filename, float& minX, float& minY, float& maxX, float& maxY, std::vector<BuildingParam>& buildingParams) {
 	QDomDocument doc;
 	QFile file(filename);
 	if (!file.open(QIODevice::ReadOnly) || !doc.setContent(&file)) return;
@@ -28,11 +28,29 @@ void OSMImporter::import(const QString& filename, std::vector<BuildingParam>& bu
 	QDomElement root = doc.documentElement();
 	QDomElement element = root.firstChild().toElement();
 	while (!element.isNull()) {
-		if (element.tagName() == "node") {
+		if (element.tagName() == "bounds") {
+			double minlat = element.attribute("minlat").toDouble();
+			double maxlat = element.attribute("maxlat").toDouble();
+			double minlon = element.attribute("minlon").toDouble();
+			double maxlon = element.attribute("maxlon").toDouble();
+
+			centerlat = (minlat + maxlat) * 0.5f;
+			centerlon = (minlon + maxlon) * 0.5f;
+
+			glm::vec2 minPt = convertLatLonToUTM(minlat, minlon, centerlat, centerlon);
+			minX = minPt.x;
+			minY = minPt.y;
+			glm::vec2 maxPt = convertLatLonToUTM(maxlat, maxlon, centerlat, centerlon);
+			maxX = maxPt.x;
+			maxY = maxPt.y;
+		}
+		else if (element.tagName() == "node") {
 			unsigned long long id = element.attribute("id").toULongLong();
 			double lon = element.attribute("lon").toDouble();
 			double lat = element.attribute("lat").toDouble();
 			glm::vec2 pos = convertLatLonToUTM(lat, lon, centerlat, centerlon);
+			if (minX > maxX) pos.x = -pos.x;
+			if (minY > maxY) pos.y = -pos.y;
 			nodes[id] = pos;
 		}
 		else if (element.tagName() == "way") {
@@ -62,9 +80,6 @@ void OSMImporter::import(const QString& filename, std::vector<BuildingParam>& bu
 						}
 						else if (k == "building:levels") {
 							height = v.toInt() * 3.5f;
-							if (height > 12) {
-								std::cout << "height = " << height << std::endl;
-							}
 						}
 						else if (k == "highway") {
 							type = "highway";
@@ -94,19 +109,18 @@ void OSMImporter::import(const QString& filename, std::vector<BuildingParam>& bu
 						if (polygon.front() == polygon.back()) polygon.pop_back();
 
 						buildingParams.emplace_back(name.toUtf8().constData(), polygon, height, subtype.toUtf8().constData());
-						if (!name.isEmpty() || !subtype.isEmpty()) {
-							std::cout << "name = " << name.toUtf8().constData() << ", building type = " << subtype.toUtf8().constData() << std::endl;
-						}
 					}
-				}
-				else if (!type.isEmpty()) {
-					std::cout << "Unsupported type: " << type.toUtf8().constData() << std::endl;
 				}
 			}
 		}
 
 		element = element.nextSiblingElement();
 	}
+
+	// when we convert the longitude/latitude to the UTM, the min/max might be swapped,
+	// so we swap them if necessary.
+	if (minX > maxX) std::swap(minX, maxX);
+	if (minY > maxY) std::swap(minY, maxY);
 }
 
 glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon, double center_lat, double center_lon) {
@@ -114,7 +128,7 @@ glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon, double center_
 	double dlat = (lat - center_lat) / 180 * glm::pi<double>();
 	double dlon = (lon - center_lon) / 180 * glm::pi<double>();
 
-	double x = radius * std::cos(center_lon) * dlon;
+	double x = radius * std::cos(center_lat) * dlon;
 	double y = radius * dlat;
 	return{ x, y };
 }

@@ -683,19 +683,10 @@
  <node id="1321518426" visible="true" version="3" changeset="18932039" timestamp="2013-11-16T12:15:02Z" user="Gravel Crew" uid="563961" lat="35.6508224" lon="139.9207503"/>
  <node id="1321518427" visible="true" version="3" changeset="18932039" timestamp="2013-11-16T12:15:02Z" user="Gravel Crew" uid="563961" lat="35.6500002" lon="139.9197544"/>
  <node id="1321518436" visible="true" version="2" changeset="18932039" timestamp="2013-11-16T12:15:02Z" user="Gravel Crew" uid="563961" lat="35.6501973" lon="139.9215342"/>
- <node id="1321520751" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6479094" lon="139.9208932"/>
- <node id="1321520753" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6475345" lon="139.9207618"/>
  <node id="1321520760" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6482624" lon="139.9197828"/>
  <node id="1321520761" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6514904" lon="139.9236559"/>
- <node id="1321520762" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6481012" lon="139.9200778"/>
  <node id="1321520763" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6481077" lon="139.9199759"/>
- <node id="1321520764" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6480510" lon="139.9210005"/>
- <node id="1321520765" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6490035" lon="139.9211561"/>
- <node id="1321520766" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6485872" lon="139.9216469"/>
  <node id="1321520767" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6513639" lon="139.9238571"/>
- <node id="1321520776" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6477786" lon="139.9208181"/>
- <node id="1321520778" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6486046" lon="139.9216416"/>
- <node id="1321520779" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590" lat="35.6476587" lon="139.9207886"/>
  <node id="1321528166" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:39:42Z" user="higa4" uid="162590" lat="35.6506294" lon="139.9244928"/>
  <node id="1321528167" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:39:42Z" user="higa4" uid="162590" lat="35.6502371" lon="139.9237068"/>
  <node id="1321528169" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:39:42Z" user="higa4" uid="162590" lat="35.6507210" lon="139.9244740"/>
@@ -1728,10 +1719,10 @@
  <node id="1343311582" visible="true" version="1" changeset="8581509" timestamp="2011-06-29T14:28:08Z" user="ikiya" uid="69966" lat="35.6511524" lon="139.9223986"/>
  <node id="1343311586" visible="true" version="1" changeset="8581509" timestamp="2011-06-29T14:28:08Z" user="ikiya" uid="69966" lat="35.6511837" lon="139.9224904"/>
  <node id="1343311599" visible="true" version="1" changeset="8581509" timestamp="2011-06-29T14:28:08Z" user="ikiya" uid="69966" lat="35.6510282" lon="139.9224569"/>
- <node id="1343356434" visible="true" version="1" changeset="8582036" timestamp="2011-06-29T15:32:30Z" user="ikiya" uid="69966" lat="35.6487477" lon="139.9217347"/>
- <node id="1343356435" visible="true" version="1" changeset="8582036" timestamp="2011-06-29T15:32:30Z" user="ikiya" uid="69966" lat="35.6489289" lon="139.9219659"/>
- <node id="1343356436" visible="true" version="1" changeset="8582036" timestamp="2011-06-29T15:32:30Z" user="ikiya" uid="69966" lat="35.6492497" lon="139.9215850"/>
- <node id="1343356437" visible="true" version="1" changeset="8582036" timestamp="2011-06-29T15:32:30Z" user="ikiya" uid="69966" lat="35.6490685" lon="139.9213539"/>
+ <node id="1343356434" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6487244" lon="139.9217299"/>
+ <node id="1343356435" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6488285" lon="139.9218543"/>
+ <node id="1343356436" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6491940" lon="139.9213914"/>
+ <node id="1343356437" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6490741" lon="139.9212869"/>
  <node id="1343373119" visible="true" version="1" changeset="8582141" timestamp="2011-06-29T15:44:07Z" user="ikiya" uid="69966" lat="35.6483046" lon="139.9261802"/>
  <node id="1343373121" visible="true" version="1" changeset="8582141" timestamp="2011-06-29T15:44:07Z" user="ikiya" uid="69966" lat="35.6469574" lon="139.9244013"/>
  <node id="1343373124" visible="true" version="1" changeset="8582141" timestamp="2011-06-29T15:44:07Z" user="ikiya" uid="69966" lat="35.6468359" lon="139.9242919"/>
@@ -5150,26 +5141,10 @@
  <node id="2592355026" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:39Z" user="Urayasu_bld_import" uid="1841514" lat="35.6439399" lon="139.9286572"/>
  <node id="2592355027" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:39Z" user="Urayasu_bld_import" uid="1841514" lat="35.6439810" lon="139.9257539"/>
  <node id="2592355028" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:39Z" user="Urayasu_bld_import" uid="1841514" lat="35.6439822" lon="139.9256678"/>
- <node id="2592357089" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:33Z" user="Urayasu_bld_import" uid="1841514" lat="35.6490802" lon="139.9213340"/>
- <node id="2592357090" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:33Z" user="Urayasu_bld_import" uid="1841514" lat="35.6490912" lon="139.9213205"/>
- <node id="2592357091" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:33Z" user="Urayasu_bld_import" uid="1841514" lat="35.6490996" lon="139.9213571"/>
- <node id="2592357092" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491065" lon="139.9213674"/>
- <node id="2592357093" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491104" lon="139.9213436"/>
- <node id="2592357094" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491107" lon="139.9213100"/>
- <node id="2592357095" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491177" lon="139.9213534"/>
- <node id="2592357096" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491209" lon="139.9212972"/>
- <node id="2592357097" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491241" lon="139.9213884"/>
- <node id="2592357098" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491353" lon="139.9213744"/>
- <node id="2592357099" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491486" lon="139.9213551"/>
  <node id="2592357100" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491519" lon="139.9251223"/>
- <node id="2592357101" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491587" lon="139.9213423"/>
  <node id="2592357102" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491594" lon="139.9251524"/>
  <node id="2592357103" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491627" lon="139.9219664"/>
  <node id="2592357104" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491653" lon="139.9220393"/>
- <node id="2592357105" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491692" lon="139.9213737"/>
- <node id="2592357106" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491795" lon="139.9213608"/>
- <node id="2592357107" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491817" lon="139.9213886"/>
- <node id="2592357108" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491920" lon="139.9213758"/>
  <node id="2592357109" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491933" lon="139.9220033"/>
  <node id="2592357110" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6491938" lon="139.9220691"/>
  <node id="2592357111" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:34Z" user="Urayasu_bld_import" uid="1841514" lat="35.6492064" lon="139.9251020"/>
@@ -6840,13 +6815,11 @@
  <node id="2592371270" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6480176" lon="139.9214929"/>
  <node id="2592371271" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6480515" lon="139.9213310"/>
  <node id="2592371272" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6480562" lon="139.9214440"/>
- <node id="2592371273" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6480859" lon="139.9209290"/>
- <node id="2592371274" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481304" lon="139.9208713"/>
  <node id="2592371275" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481340" lon="139.9221646"/>
  <node id="2592371276" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481520" lon="139.9216811"/>
  <node id="2592371277" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481567" lon="139.9221955"/>
  <node id="2592371278" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481639" lon="139.9216661"/>
- <node id="2592371279" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481679" lon="139.9209172"/>
+ <node id="2592371279" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6478154" lon="139.9204964"/>
  <node id="2592371280" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481726" lon="139.9221190"/>
  <node id="2592371281" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481791" lon="139.9215710"/>
  <node id="2592371282" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6481922" lon="139.9220394"/>
@@ -6855,21 +6828,19 @@
  <node id="2592371285" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482152" lon="139.9215268"/>
  <node id="2592371286" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482188" lon="139.9217602"/>
  <node id="2592371287" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:37Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482231" lon="139.9219872"/>
- <node id="2592371288" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482233" lon="139.9210925"/>
+ <node id="2592371288" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6482216" lon="139.9209793"/>
  <node id="2592371289" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482318" lon="139.9220879"/>
  <node id="2592371290" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482467" lon="139.9218507"/>
  <node id="2592371291" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482543" lon="139.9218410"/>
- <node id="2592371292" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482622" lon="139.9210398"/>
  <node id="2592371293" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6482902" lon="139.9219022"/>
- <node id="2592371294" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6483149" lon="139.9211028"/>
- <node id="2592371295" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6483179" lon="139.9207286"/>
+ <node id="2592371295" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6481048" lon="139.9201277"/>
  <node id="2592371296" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6483484" lon="139.9218497"/>
  <node id="2592371297" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6483639" lon="139.9218512"/>
  <node id="2592371298" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6483891" lon="139.9218978"/>
  <node id="2592371299" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6483938" lon="139.9218874"/>
  <node id="2592371300" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6484020" lon="139.9218018"/>
  <node id="2592371301" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6484335" lon="139.9218389"/>
- <node id="2592371302" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6484719" lon="139.9209073"/>
+ <node id="2592371302" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6485110" lon="139.9206104"/>
  <node id="2592371303" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6485215" lon="139.9215129"/>
  <node id="2592371304" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6486008" lon="139.9211745"/>
  <node id="2592371305" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514" lat="35.6486130" lon="139.9216202"/>
@@ -11349,6 +11320,26 @@
  <node id="7282608635" visible="true" version="1" changeset="82011649" timestamp="2020-03-10T14:35:16Z" user="dqn" uid="3150532" lat="35.6383450" lon="139.9355140"/>
  <node id="7282608636" visible="true" version="1" changeset="82011649" timestamp="2020-03-10T14:35:16Z" user="dqn" uid="3150532" lat="35.6527796" lon="139.9013420"/>
  <node id="7282608641" visible="true" version="1" changeset="82011649" timestamp="2020-03-10T14:35:16Z" user="dqn" uid="3150532" lat="35.6600883" lon="139.9053006"/>
+ <node id="7298146500" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6409796" lon="139.9289389"/>
+ <node id="7298146501" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6408831" lon="139.9290619"/>
+ <node id="7298146502" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6411779" lon="139.9294124"/>
+ <node id="7298146503" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6409455" lon="139.9297084"/>
+ <node id="7298146504" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6409228" lon="139.9296814"/>
+ <node id="7298146505" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6405118" lon="139.9302047"/>
+ <node id="7298146506" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6404173" lon="139.9300922"/>
+ <node id="7298146507" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6402980" lon="139.9302440"/>
+ <node id="7298146508" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6405964" lon="139.9305990"/>
+ <node id="7298146509" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6407069" lon="139.9304584"/>
+ <node id="7298146510" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6406242" lon="139.9303601"/>
+ <node id="7298146511" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6408467" lon="139.9300770"/>
+ <node id="7298146512" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6408960" lon="139.9301357"/>
+ <node id="7298146513" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6410974" lon="139.9298794"/>
+ <node id="7298146514" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6410464" lon="139.9298188"/>
+ <node id="7298146515" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6412792" lon="139.9295225"/>
+ <node id="7298146516" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6413285" lon="139.9295811"/>
+ <node id="7298146517" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936" lat="35.6414208" lon="139.9294636"/>
+ <node id="7298146698" visible="true" version="1" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6491183" lon="139.9213398"/>
+ <node id="7298146699" visible="true" version="1" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936" lat="35.6491341" lon="139.9213198"/>
  <way id="26320624" visible="true" version="24" changeset="75308126" timestamp="2019-10-05T03:44:20Z" user="mi_mitz" uid="10182150">
   <nd ref="1312828742"/>
   <nd ref="288392096"/>
@@ -12028,7 +12019,7 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="116450795" visible="true" version="2" changeset="19627710" timestamp="2013-12-25T10:35:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="116450795" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1312803857"/>
   <nd ref="1312803859"/>
   <nd ref="1312803858"/>
@@ -12038,6 +12029,7 @@
   <nd ref="1312803861"/>
   <nd ref="1312803857"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="4"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -12183,7 +12175,7 @@
   <tag k="leisure" v="pitch"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="116495691" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="116495691" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1313126253"/>
   <nd ref="1313126252"/>
   <nd ref="1313126270"/>
@@ -12192,24 +12184,27 @@
   <nd ref="1313126266"/>
   <nd ref="1313126253"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="116495692" visible="true" version="1" changeset="8349972" timestamp="2011-06-05T14:49:33Z" user="higa4" uid="162590">
+ <way id="116495692" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1313126257"/>
   <nd ref="1313126271"/>
   <nd ref="1313126268"/>
   <nd ref="1313126250"/>
   <nd ref="1313126257"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="116495693" visible="true" version="1" changeset="8349972" timestamp="2011-06-05T14:49:33Z" user="higa4" uid="162590">
+ <way id="116495693" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1313126256"/>
   <nd ref="1313126272"/>
   <nd ref="1313126278"/>
   <nd ref="1313126248"/>
   <nd ref="1313126256"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="source" v="Bing"/>
  </way>
  <way id="117341024" visible="true" version="3" changeset="18932039" timestamp="2013-11-16T12:14:57Z" user="Gravel Crew" uid="563961">
@@ -12276,20 +12271,6 @@
   <nd ref="1321518425"/>
   <nd ref="1321518393"/>
   <tag k="highway" v="residential"/>
-  <tag k="source" v="Bing"/>
- </way>
- <way id="117342238" visible="true" version="1" changeset="8413623" timestamp="2011-06-12T10:34:02Z" user="higa4" uid="162590">
-  <nd ref="1321520753"/>
-  <nd ref="1321520762"/>
-  <nd ref="1321520765"/>
-  <nd ref="1321520778"/>
-  <nd ref="1321520766"/>
-  <nd ref="1321520764"/>
-  <nd ref="1321520751"/>
-  <nd ref="1321520776"/>
-  <nd ref="1321520779"/>
-  <nd ref="1321520753"/>
-  <tag k="landuse" v="greenfield"/>
   <tag k="source" v="Bing"/>
  </way>
  <way id="117342239" visible="true" version="2" changeset="71856634" timestamp="2019-07-03T11:55:21Z" user="newfocusdriver" uid="10127422">
@@ -12902,23 +12883,25 @@
   <tag k="landuse" v="forest"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119012679" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119012679" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1337929297"/>
   <nd ref="1337929305"/>
   <nd ref="1337929285"/>
   <nd ref="1337929293"/>
   <nd ref="1337929297"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="5"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119012680" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119012680" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1337929328"/>
   <nd ref="1337929310"/>
   <nd ref="1337929327"/>
   <nd ref="1337929311"/>
   <nd ref="1337929328"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="7"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -12959,13 +12942,14 @@
   <tag k="source" v="Bing"/>
   <tag k="sport" v="tennis"/>
  </way>
- <way id="119012686" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119012686" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1337929323"/>
   <nd ref="1337929303"/>
   <nd ref="1337929312"/>
   <nd ref="1337929290"/>
   <nd ref="1337929323"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -13008,13 +12992,14 @@
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119013861" visible="true" version="2" changeset="19612977" timestamp="2013-12-24T07:42:50Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119013861" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1337930541"/>
   <nd ref="1337930559"/>
   <nd ref="1337930514"/>
   <nd ref="1337930510"/>
   <nd ref="1337930541"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="5"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -13028,13 +13013,14 @@
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119013873" visible="true" version="2" changeset="19612977" timestamp="2013-12-24T07:42:50Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119013873" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1337930478"/>
   <nd ref="1337930555"/>
   <nd ref="1337930449"/>
   <nd ref="1337930529"/>
   <nd ref="1337930478"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="5"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -13047,13 +13033,14 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119013995" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119013995" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1337931819"/>
   <nd ref="1337931800"/>
   <nd ref="1337931816"/>
   <nd ref="1337931795"/>
   <nd ref="1337931819"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="5"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -14546,13 +14533,16 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119616221" visible="true" version="1" changeset="8582036" timestamp="2011-06-29T15:32:30Z" user="ikiya" uid="69966">
+ <way id="119616221" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343356436"/>
   <nd ref="1343356435"/>
   <nd ref="1343356434"/>
   <nd ref="1343356437"/>
+  <nd ref="7298146698"/>
+  <nd ref="7298146699"/>
   <nd ref="1343356436"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="source" v="Bing"/>
  </way>
  <way id="119617034" visible="true" version="1" changeset="8582141" timestamp="2011-06-29T15:44:19Z" user="ikiya" uid="69966">
@@ -14630,13 +14620,14 @@
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617052" visible="true" version="2" changeset="19627747" timestamp="2013-12-25T10:39:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119617052" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373460"/>
   <nd ref="1343373296"/>
   <nd ref="1343373151"/>
   <nd ref="1343373400"/>
   <nd ref="1343373460"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="5"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -14671,27 +14662,29 @@
   <tag k="amenity" v="parking"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617060" visible="true" version="2" changeset="19627747" timestamp="2013-12-25T10:39:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119617060" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373142"/>
   <nd ref="1343373154"/>
   <nd ref="1343373403"/>
   <nd ref="1343373243"/>
   <nd ref="1343373142"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617062" visible="true" version="2" changeset="19627747" timestamp="2013-12-25T10:39:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119617062" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373119"/>
   <nd ref="1343373359"/>
   <nd ref="1343373205"/>
   <nd ref="1343373457"/>
   <nd ref="1343373119"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617065" visible="true" version="1" changeset="8582141" timestamp="2011-06-29T15:44:22Z" user="ikiya" uid="69966">
+ <way id="119617065" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373418"/>
   <nd ref="1343373502"/>
   <nd ref="1343373292"/>
@@ -14710,6 +14703,7 @@
   <nd ref="1343373273"/>
   <nd ref="1343373418"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
   <tag k="source" v="Bing"/>
  </way>
  <way id="119617068" visible="true" version="1" changeset="8582141" timestamp="2011-06-29T15:44:22Z" user="ikiya" uid="69966">
@@ -14749,7 +14743,7 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617078" visible="true" version="3" changeset="19627747" timestamp="2013-12-25T10:39:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119617078" visible="true" version="4" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373281"/>
   <nd ref="1343373204"/>
   <nd ref="2592357145"/>
@@ -14758,10 +14752,11 @@
   <nd ref="1343373291"/>
   <nd ref="1343373281"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="5"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617080" visible="true" version="2" changeset="19627747" timestamp="2013-12-25T10:39:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119617080" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373491"/>
   <nd ref="1343373330"/>
   <nd ref="1343373186"/>
@@ -14769,10 +14764,11 @@
   <nd ref="1343373196"/>
   <nd ref="1343373491"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="119617081" visible="true" version="3" changeset="19627747" timestamp="2013-12-25T10:39:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="119617081" visible="true" version="4" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1343373475"/>
   <nd ref="1343373405"/>
   <nd ref="1343373159"/>
@@ -14781,6 +14777,7 @@
   <nd ref="2592357119"/>
   <nd ref="1343373475"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -16859,13 +16856,14 @@
   <tag k="landuse" v="forest"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159585" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159585" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916180"/>
   <nd ref="1347915975"/>
   <nd ref="1347916100"/>
   <nd ref="1347916054"/>
   <nd ref="1347916180"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -16914,38 +16912,41 @@
   <tag k="tourism" v="hotel"/>
   <tag k="website" v="https://www.gardenhotels.co.jp/pranatokyobay/"/>
  </way>
- <way id="120159590" visible="true" version="3" changeset="24156934" timestamp="2014-07-15T09:21:57Z" user="ShinH" uid="2187400">
+ <way id="120159590" visible="true" version="4" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916024"/>
   <nd ref="1347916149"/>
   <nd ref="1347915963"/>
   <nd ref="1347915921"/>
   <nd ref="1347916024"/>
   <tag k="building" v="house"/>
+  <tag k="building:levels" v="18"/>
   <tag k="building:material" v="concrete"/>
   <tag k="name" v="パークシティグランデ新浦安リバーパレス"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159593" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159593" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916052"/>
   <nd ref="1347916134"/>
   <nd ref="1347915949"/>
   <nd ref="1347915933"/>
   <nd ref="1347916052"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159594" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159594" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347915991"/>
   <nd ref="1347916140"/>
   <nd ref="1347915959"/>
   <nd ref="1347915888"/>
   <nd ref="1347915991"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159595" visible="true" version="4" changeset="24156934" timestamp="2014-07-15T09:21:57Z" user="ShinH" uid="2187400">
+ <way id="120159595" visible="true" version="5" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347915979"/>
   <nd ref="2593363509"/>
   <nd ref="2593363511"/>
@@ -16961,57 +16962,63 @@
   <nd ref="1347915943"/>
   <nd ref="1347915979"/>
   <tag k="building" v="house"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="name" v="パークシティグランデ新浦安シーパレス"/>
   <tag k="source" v="Bing,2010-01"/>
  </way>
- <way id="120159598" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159598" visible="true" version="3" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="1347915956"/>
   <nd ref="1347916073"/>
   <nd ref="1347915893"/>
   <nd ref="1347916138"/>
   <nd ref="1347915956"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159599" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159599" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916075"/>
   <nd ref="1347916021"/>
   <nd ref="1347915970"/>
   <nd ref="1347916088"/>
   <nd ref="1347916075"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159602" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159602" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916153"/>
   <nd ref="1347916039"/>
   <nd ref="1347915989"/>
   <nd ref="1347916105"/>
   <nd ref="1347916153"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159606" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159606" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916102"/>
   <nd ref="1347915895"/>
   <nd ref="1347916005"/>
   <nd ref="1347915980"/>
   <nd ref="1347916102"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159608" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159608" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347915892"/>
   <nd ref="1347915904"/>
   <nd ref="1347916119"/>
   <nd ref="1347915939"/>
   <nd ref="1347915892"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -17025,62 +17032,68 @@
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159613" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159613" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916070"/>
   <nd ref="1347916083"/>
   <nd ref="1347916023"/>
   <nd ref="1347916148"/>
   <nd ref="1347916070"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159614" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159614" visible="true" version="3" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="1347915941"/>
   <nd ref="1347916132"/>
   <nd ref="1347916086"/>
   <nd ref="1347915901"/>
   <nd ref="1347915941"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="12"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159616" visible="true" version="1" changeset="8619014" timestamp="2011-07-03T13:39:42Z" user="ikiya" uid="69966">
+ <way id="120159616" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916133"/>
   <nd ref="1347915925"/>
   <nd ref="1347916026"/>
   <nd ref="1347916007"/>
   <nd ref="1347916133"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159620" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159620" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916036"/>
   <nd ref="1347916162"/>
   <nd ref="1347915966"/>
   <nd ref="1347915931"/>
   <nd ref="1347916036"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159623" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159623" visible="true" version="3" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="1347915969"/>
   <nd ref="1347915976"/>
   <nd ref="1347915914"/>
   <nd ref="1347916020"/>
   <nd ref="1347915969"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="12"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159624" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159624" visible="true" version="3" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="1347915927"/>
   <nd ref="1347915994"/>
   <nd ref="1347916120"/>
   <nd ref="1347916101"/>
   <nd ref="1347915927"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="12"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -17131,27 +17144,29 @@
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159641" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159641" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347915971"/>
   <nd ref="1347916090"/>
   <nd ref="1347915918"/>
   <nd ref="1347916171"/>
   <nd ref="1347915971"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159644" visible="true" version="2" changeset="19624974" timestamp="2013-12-25T02:28:24Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159644" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916115"/>
   <nd ref="1347916068"/>
   <nd ref="1347916041"/>
   <nd ref="1347916167"/>
   <nd ref="1347916115"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159645" visible="true" version="2" changeset="19624859" timestamp="2013-12-25T01:55:25Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159645" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916085"/>
   <nd ref="1347916163"/>
   <nd ref="1347915912"/>
@@ -17166,10 +17181,11 @@
   <nd ref="1347915899"/>
   <nd ref="1347916085"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="4"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159649" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120159649" visible="true" version="3" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="1347915958"/>
   <nd ref="1347915937"/>
   <nd ref="2593368354"/>
@@ -17187,6 +17203,7 @@
   <nd ref="2593368371"/>
   <nd ref="1347915958"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="source" v="Bing"/>
  </way>
  <way id="120159650" visible="true" version="1" changeset="8619014" timestamp="2011-07-03T13:39:45Z" user="ikiya" uid="69966">
@@ -17198,13 +17215,14 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120159653" visible="true" version="3" changeset="24156934" timestamp="2014-07-15T09:21:57Z" user="ShinH" uid="2187400">
+ <way id="120159653" visible="true" version="4" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347916092"/>
   <nd ref="1347915972"/>
   <nd ref="1347915992"/>
   <nd ref="1347915889"/>
   <nd ref="1347916092"/>
   <tag k="building" v="house"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
   <tag k="name" v="パークシティグランデ新浦安リバーパレス"/>
   <tag k="source" v="Bing"/>
@@ -17230,7 +17248,7 @@
   <tag k="source" v="Bing"/>
   <tag k="surface" v="paved"/>
  </way>
- <way id="120162578" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:38Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120162578" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347947847"/>
   <nd ref="1347947967"/>
   <nd ref="1347948077"/>
@@ -17248,6 +17266,7 @@
   <nd ref="1347948007"/>
   <nd ref="1347947847"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -17272,7 +17291,7 @@
   <tag k="building" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="120162593" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="120162593" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1347947923"/>
   <nd ref="1347947889"/>
   <nd ref="1347947981"/>
@@ -17321,6 +17340,7 @@
   <nd ref="1347947946"/>
   <nd ref="1347947923"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing"/>
  </way>
@@ -17755,7 +17775,7 @@
   <tag k="highway" v="service"/>
   <tag k="source" v="Bing,2010-01"/>
  </way>
- <way id="152327997" visible="true" version="3" changeset="24156934" timestamp="2014-07-15T09:21:57Z" user="ShinH" uid="2187400">
+ <way id="152327997" visible="true" version="4" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1651532612"/>
   <nd ref="1651532531"/>
   <nd ref="1651532528"/>
@@ -17769,11 +17789,12 @@
   <nd ref="1651532626"/>
   <nd ref="1651532612"/>
   <tag k="building" v="house"/>
+  <tag k="building:levels" v="18"/>
   <tag k="building:material" v="concrete"/>
   <tag k="name" v="パークシティグランデ新浦安シーパレス"/>
   <tag k="source" v="Bing,2010-01"/>
  </way>
- <way id="152328052" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="152328052" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="1651532928"/>
   <nd ref="1651532882"/>
   <nd ref="1651532844"/>
@@ -17840,6 +17861,7 @@
   <nd ref="1651532869"/>
   <nd ref="1651532928"/>
   <tag k="building" v="school"/>
+  <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
   <tag k="source" v="Bing,2010-01"/>
  </way>
@@ -18188,7 +18210,7 @@
   <tag k="oneway" v="yes"/>
   <tag k="source" v="Bing"/>
  </way>
- <way id="221346911" visible="true" version="4" changeset="82232365" timestamp="2020-03-16T02:14:47Z" user="gen2020" uid="10630936">
+ <way id="221346911" visible="true" version="5" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2303757509"/>
   <nd ref="2303757511"/>
   <nd ref="2593368452"/>
@@ -18204,7 +18226,7 @@
   <tag k="building" v="retail"/>
   <tag k="building:levels" v="1"/>
   <tag k="building:material" v="concrete"/>
-  <tag k="height" v="2"/>
+  <tag k="height" v="8"/>
   <tag k="name" v="ケーヨーデーツーD2"/>
  </way>
  <way id="221346913" visible="true" version="2" changeset="82232365" timestamp="2020-03-16T02:14:47Z" user="gen2020" uid="10630936">
@@ -18932,7 +18954,7 @@
   <nd ref="2592354877"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253284825" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253284825" visible="true" version="2" changeset="82236495" timestamp="2020-03-16T04:36:15Z" user="gen2020" uid="10630936">
   <nd ref="2592354404"/>
   <nd ref="2592354426"/>
   <nd ref="2592354420"/>
@@ -18953,6 +18975,7 @@
   <nd ref="2592354354"/>
   <nd ref="2592354404"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253284826" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:40Z" user="Urayasu_bld_import" uid="1841514">
@@ -19168,7 +19191,7 @@
   <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253284834" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253284834" visible="true" version="2" changeset="82236495" timestamp="2020-03-16T04:36:15Z" user="gen2020" uid="10630936">
   <nd ref="2592354453"/>
   <nd ref="2592354454"/>
   <nd ref="2592354455"/>
@@ -19199,6 +19222,7 @@
   <nd ref="2592354412"/>
   <nd ref="2592354453"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253284835" visible="true" version="2" changeset="82232365" timestamp="2020-03-16T02:14:47Z" user="gen2020" uid="10630936">
@@ -19236,7 +19260,7 @@
   <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253284836" visible="true" version="1" changeset="19612544" timestamp="2013-12-24T06:57:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253284836" visible="true" version="2" changeset="82236495" timestamp="2020-03-16T04:36:15Z" user="gen2020" uid="10630936">
   <nd ref="2592354348"/>
   <nd ref="2592354346"/>
   <nd ref="2592354344"/>
@@ -19269,6 +19293,7 @@
   <nd ref="2592354393"/>
   <nd ref="2592354348"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="12"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253284837" visible="true" version="2" changeset="82232365" timestamp="2020-03-16T02:14:47Z" user="gen2020" uid="10630936">
@@ -19869,7 +19894,7 @@
   <nd ref="2592354826"/>
   <nd ref="2592354804"/>
  </way>
- <way id="253285039" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285039" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592357145"/>
   <nd ref="2592357146"/>
   <nd ref="2592357144"/>
@@ -19888,6 +19913,7 @@
   <nd ref="1343373456"/>
   <nd ref="2592357145"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
  <way id="253285040" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592357114"/>
@@ -19896,13 +19922,14 @@
   <nd ref="2592357114"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253285041" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285041" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592357138"/>
   <nd ref="2592357126"/>
   <nd ref="2592357116"/>
   <nd ref="2592357125"/>
   <nd ref="2592357138"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253285042" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
@@ -19913,14 +19940,6 @@
   <nd ref="2592357102"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253285043" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
-  <nd ref="2592357096"/>
-  <nd ref="2592357101"/>
-  <nd ref="2592357099"/>
-  <nd ref="2592357094"/>
-  <nd ref="2592357096"/>
-  <tag k="building" v="yes"/>
- </way>
  <way id="253285044" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592357124"/>
   <nd ref="2592357121"/>
@@ -19929,39 +19948,16 @@
   <nd ref="2592357124"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253285045" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
-  <nd ref="2592357106"/>
-  <nd ref="2592357108"/>
-  <nd ref="2592357107"/>
-  <nd ref="2592357105"/>
-  <nd ref="2592357106"/>
-  <tag k="building" v="yes"/>
- </way>
- <way id="253285046" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
-  <nd ref="2592357090"/>
-  <nd ref="2592357093"/>
-  <nd ref="2592357091"/>
-  <nd ref="2592357089"/>
-  <nd ref="2592357090"/>
-  <tag k="building" v="yes"/>
- </way>
- <way id="253285047" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285047" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592357136"/>
   <nd ref="2592357128"/>
   <nd ref="2592357127"/>
   <nd ref="2592357134"/>
   <nd ref="2592357136"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
- <way id="253285049" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
-  <nd ref="2592357095"/>
-  <nd ref="2592357098"/>
-  <nd ref="2592357097"/>
-  <nd ref="2592357092"/>
-  <nd ref="2592357095"/>
-  <tag k="building" v="yes"/>
- </way>
- <way id="253285051" visible="true" version="1" changeset="19612618" timestamp="2013-12-24T07:06:35Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285051" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592357118"/>
   <nd ref="2592357123"/>
   <nd ref="2592357117"/>
@@ -19972,6 +19968,7 @@
   <nd ref="2592357103"/>
   <nd ref="2592357118"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253285262" visible="true" version="1" changeset="19612688" timestamp="2013-12-24T07:12:18Z" user="Urayasu_bld_import" uid="1841514">
@@ -20187,7 +20184,7 @@
   <nd ref="2592359797"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253285394" visible="true" version="1" changeset="19612750" timestamp="2013-12-24T07:17:28Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285394" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592359689"/>
   <nd ref="2592359712"/>
   <nd ref="2592359709"/>
@@ -20210,9 +20207,10 @@
   <nd ref="2592359675"/>
   <nd ref="2592359689"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253285395" visible="true" version="1" changeset="19612750" timestamp="2013-12-24T07:17:29Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285395" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592359721"/>
   <nd ref="2592359729"/>
   <nd ref="2592359725"/>
@@ -20247,9 +20245,10 @@
   <nd ref="2592359718"/>
   <nd ref="2592359721"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253285396" visible="true" version="1" changeset="19612750" timestamp="2013-12-24T07:17:29Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285396" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592359727"/>
   <nd ref="2592359726"/>
   <nd ref="2592359752"/>
@@ -20300,6 +20299,7 @@
   <nd ref="2592359724"/>
   <nd ref="2592359727"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253285397" visible="true" version="1" changeset="19612750" timestamp="2013-12-24T07:17:29Z" user="Urayasu_bld_import" uid="1841514">
@@ -20386,7 +20386,7 @@
   <nd ref="2592359764"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253285407" visible="true" version="1" changeset="19612750" timestamp="2013-12-24T07:17:29Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253285407" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592359756"/>
   <nd ref="2592359748"/>
   <nd ref="2592359744"/>
@@ -20397,6 +20397,7 @@
   <nd ref="2592359730"/>
   <nd ref="2592359756"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286095" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:38Z" user="Urayasu_bld_import" uid="1841514">
@@ -20445,7 +20446,7 @@
   <nd ref="2592370784"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253286098" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:11Z" user="nyampire" uid="378532">
+ <way id="253286098" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370989"/>
   <nd ref="2592370867"/>
   <nd ref="2592370894"/>
@@ -20462,9 +20463,10 @@
   <nd ref="2592371053"/>
   <nd ref="2592370989"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286099" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:11Z" user="nyampire" uid="378532">
+ <way id="253286099" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370894"/>
   <nd ref="2592370867"/>
   <nd ref="2592370858"/>
@@ -20481,6 +20483,7 @@
   <nd ref="2592370794"/>
   <nd ref="2592370894"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286100" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:11Z" user="nyampire" uid="378532">
@@ -20522,7 +20525,7 @@
   <tag k="building" v="roof"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286104" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286104" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370192"/>
   <nd ref="2592370193"/>
   <nd ref="2592370176"/>
@@ -20544,6 +20547,7 @@
   <nd ref="2592370167"/>
   <nd ref="2592370192"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286105" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:11Z" user="nyampire" uid="378532">
@@ -20570,7 +20574,7 @@
   <tag k="building" v="yes"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286106" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286106" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369932"/>
   <nd ref="2592369933"/>
   <nd ref="2592369925"/>
@@ -20592,9 +20596,10 @@
   <nd ref="2592369916"/>
   <nd ref="2592369932"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286107" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286107" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370129"/>
   <nd ref="2592370180"/>
   <nd ref="2592370181"/>
@@ -20619,9 +20624,10 @@
   <nd ref="2592370131"/>
   <nd ref="2592370129"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286108" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286108" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370123"/>
   <nd ref="2592370154"/>
   <nd ref="2592370145"/>
@@ -20646,9 +20652,10 @@
   <nd ref="2592370052"/>
   <nd ref="2592370123"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286109" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286109" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370388"/>
   <nd ref="2592370520"/>
   <nd ref="2592370488"/>
@@ -20674,8 +20681,9 @@
   <nd ref="2592370385"/>
   <nd ref="2592370388"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
- <way id="253286110" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:40Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286110" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369980"/>
   <nd ref="2592370027"/>
   <nd ref="2592370028"/>
@@ -20704,9 +20712,10 @@
   <nd ref="2592369982"/>
   <nd ref="2592369980"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286111" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:12Z" user="nyampire" uid="378532">
+ <way id="253286111" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592371115"/>
   <nd ref="2592371120"/>
   <nd ref="2592371140"/>
@@ -20737,9 +20746,10 @@
   <nd ref="2592371101"/>
   <nd ref="2592371115"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="22"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286113" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:11Z" user="nyampire" uid="378532">
+ <way id="253286113" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592371101"/>
   <nd ref="2592371116"/>
   <nd ref="2592371113"/>
@@ -20770,6 +20780,7 @@
   <nd ref="2592371115"/>
   <nd ref="2592371101"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286114" visible="true" version="2" changeset="82231638" timestamp="2020-03-16T01:41:53Z" user="gen2020" uid="10630936">
@@ -20804,7 +20815,7 @@
   <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286115" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:41Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286115" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369983"/>
   <nd ref="2592370019"/>
   <nd ref="2592370020"/>
@@ -20833,6 +20844,7 @@
   <nd ref="2592369984"/>
   <nd ref="2592369983"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286116" visible="true" version="2" changeset="82231638" timestamp="2020-03-16T01:41:53Z" user="gen2020" uid="10630936">
@@ -21087,7 +21099,7 @@
   <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286123" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:42Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286123" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370616"/>
   <nd ref="2592370628"/>
   <nd ref="2592370632"/>
@@ -21122,9 +21134,10 @@
   <nd ref="2592370612"/>
   <nd ref="2592370616"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286124" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:42Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286124" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369850"/>
   <nd ref="2592369853"/>
   <nd ref="2592369856"/>
@@ -21160,9 +21173,10 @@
   <nd ref="2592369807"/>
   <nd ref="2592369850"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="10"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286125" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:42Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286125" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369808"/>
   <nd ref="2592369812"/>
   <nd ref="2592369810"/>
@@ -21198,9 +21212,10 @@
   <nd ref="2592369854"/>
   <nd ref="2592369808"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="10"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286126" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:43Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286126" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370278"/>
   <nd ref="2592370273"/>
   <nd ref="2592370269"/>
@@ -21237,9 +21252,10 @@
   <nd ref="2592370288"/>
   <nd ref="2592370278"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286127" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:12Z" user="nyampire" uid="378532">
+ <way id="253286127" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370254"/>
   <nd ref="2592370222"/>
   <nd ref="2592370223"/>
@@ -21278,9 +21294,10 @@
   <nd ref="2592370253"/>
   <nd ref="2592370254"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286128" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:43Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286128" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370356"/>
   <nd ref="2592370355"/>
   <nd ref="2592370419"/>
@@ -21318,9 +21335,10 @@
   <nd ref="2592370348"/>
   <nd ref="2592370356"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286129" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:43Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286129" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369976"/>
   <nd ref="2592369993"/>
   <nd ref="2592369991"/>
@@ -21359,9 +21377,10 @@
   <nd ref="2592369942"/>
   <nd ref="2592369976"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286130" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:43Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286130" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369889"/>
   <nd ref="2592369894"/>
   <nd ref="2592369893"/>
@@ -21400,6 +21419,7 @@
   <nd ref="2592369868"/>
   <nd ref="2592369889"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286131" visible="true" version="2" changeset="82231638" timestamp="2020-03-16T01:41:53Z" user="gen2020" uid="10630936">
@@ -21444,7 +21464,7 @@
   <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286132" visible="true" version="2" changeset="19613046" timestamp="2013-12-24T07:52:12Z" user="nyampire" uid="378532">
+ <way id="253286132" visible="true" version="3" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370968"/>
   <nd ref="2592370966"/>
   <nd ref="2592370967"/>
@@ -21486,8 +21506,9 @@
   <nd ref="2592370984"/>
   <nd ref="2592370968"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
- <way id="253286133" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:44Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286133" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370567"/>
   <nd ref="2592370548"/>
   <nd ref="2592370528"/>
@@ -21534,9 +21555,10 @@
   <nd ref="2592370552"/>
   <nd ref="2592370567"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286134" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:44Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286134" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370266"/>
   <nd ref="2592370258"/>
   <nd ref="2592370267"/>
@@ -21585,9 +21607,10 @@
   <nd ref="2592370256"/>
   <nd ref="2592370266"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286135" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:44Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286135" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369967"/>
   <nd ref="2592369962"/>
   <nd ref="2592369969"/>
@@ -21636,9 +21659,10 @@
   <nd ref="2592369961"/>
   <nd ref="2592369967"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286136" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:44Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286136" visible="true" version="2" changeset="82236751" timestamp="2020-03-16T04:45:45Z" user="gen2020" uid="10630936">
   <nd ref="2592371217"/>
   <nd ref="2592371221"/>
   <nd ref="2592371222"/>
@@ -21690,6 +21714,7 @@
   <nd ref="2592371216"/>
   <nd ref="2592371217"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286137" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:45Z" user="Urayasu_bld_import" uid="1841514">
@@ -22093,13 +22118,14 @@
   <nd ref="2592370733"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253286187" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:48Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286187" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592369864"/>
   <nd ref="2592369885"/>
   <nd ref="2592369860"/>
   <nd ref="2592369843"/>
   <nd ref="2592369864"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
  <way id="253286189" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:48Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592370244"/>
@@ -22133,7 +22159,7 @@
   <nd ref="2592370883"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="253286194" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:48Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286194" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370615"/>
   <nd ref="2592370630"/>
   <nd ref="2592370627"/>
@@ -22189,6 +22215,7 @@
   <nd ref="2592370613"/>
   <nd ref="2592370615"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
  <way id="253286195" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592371165"/>
@@ -22199,7 +22226,7 @@
   <nd ref="2592371165"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253286196" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286196" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370107"/>
   <nd ref="2592370098"/>
   <nd ref="2592370043"/>
@@ -22207,6 +22234,7 @@
   <nd ref="2592370106"/>
   <nd ref="2592370107"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
  <way id="253286197" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592370981"/>
@@ -22248,7 +22276,7 @@
   <nd ref="2592371147"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="253286201" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286201" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370793"/>
   <nd ref="2592370658"/>
   <nd ref="2592370572"/>
@@ -22257,6 +22285,7 @@
   <nd ref="2592370706"/>
   <nd ref="2592370793"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
  <way id="253286202" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592370157"/>
@@ -22278,7 +22307,7 @@
   <nd ref="2592370475"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253286204" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286204" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592371308"/>
   <nd ref="2592371305"/>
   <nd ref="2592371303"/>
@@ -22287,9 +22316,10 @@
   <nd ref="2592371307"/>
   <nd ref="2592371308"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286205" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286205" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370829"/>
   <nd ref="2592370821"/>
   <nd ref="2592370830"/>
@@ -22300,6 +22330,7 @@
   <nd ref="2592370623"/>
   <nd ref="2592370829"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286206" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
@@ -22315,19 +22346,16 @@
   <tag k="building" v="roof"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286207" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:49Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286207" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592371302"/>
-  <nd ref="2592371294"/>
-  <nd ref="2592371292"/>
   <nd ref="2592371288"/>
-  <nd ref="2592371273"/>
-  <nd ref="2592371274"/>
   <nd ref="2592371279"/>
   <nd ref="2592371295"/>
   <nd ref="2592371302"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
  </way>
- <way id="253286208" visible="true" version="1" changeset="19612977" timestamp="2013-12-24T07:42:50Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286208" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592370724"/>
   <nd ref="2592370629"/>
   <nd ref="2592370780"/>
@@ -22338,6 +22366,7 @@
   <nd ref="2592370859"/>
   <nd ref="2592370724"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286929" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:30Z" user="Urayasu_bld_import" uid="1841514">
@@ -22387,7 +22416,7 @@
   <nd ref="2592379983"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253286932" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286932" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379532"/>
   <nd ref="2592379476"/>
   <nd ref="2592379463"/>
@@ -22402,9 +22431,10 @@
   <nd ref="2592379538"/>
   <nd ref="2592379532"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="12"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286933" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286933" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592380069"/>
   <nd ref="2592380081"/>
   <nd ref="2592380084"/>
@@ -22419,6 +22449,7 @@
   <nd ref="2592380083"/>
   <nd ref="2592380069"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286934" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
@@ -22438,7 +22469,7 @@
   <tag k="building" v="roof"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286935" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286935" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592380089"/>
   <nd ref="2592380065"/>
   <nd ref="2592380063"/>
@@ -22455,8 +22486,9 @@
   <nd ref="2592380072"/>
   <nd ref="2592380089"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
  </way>
- <way id="253286936" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286936" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379869"/>
   <nd ref="2592379839"/>
   <nd ref="2592379975"/>
@@ -22473,6 +22505,7 @@
   <nd ref="2592379885"/>
   <nd ref="2592379869"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="15"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286937" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
@@ -22495,7 +22528,7 @@
   <tag k="building" v="yes"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286938" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286938" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379704"/>
   <nd ref="2592379719"/>
   <nd ref="2592379710"/>
@@ -22516,6 +22549,7 @@
   <nd ref="2592379859"/>
   <nd ref="2592379704"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="15"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286939" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
@@ -22541,7 +22575,7 @@
   <nd ref="2592379284"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253286940" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:31Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286940" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379937"/>
   <nd ref="2592379952"/>
   <nd ref="2592379948"/>
@@ -22566,6 +22600,7 @@
   <nd ref="2592379928"/>
   <nd ref="2592379937"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="15"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286941" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:32Z" user="Urayasu_bld_import" uid="1841514">
@@ -22634,7 +22669,7 @@
   <tag k="building" v="yes"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286943" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:32Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286943" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379578"/>
   <nd ref="2592379651"/>
   <nd ref="2592379648"/>
@@ -22667,9 +22702,10 @@
   <nd ref="2592379543"/>
   <nd ref="2592379578"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="15"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253286944" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:32Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286944" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379659"/>
   <nd ref="2592379668"/>
   <nd ref="2592379672"/>
@@ -22704,6 +22740,7 @@
   <nd ref="2592379589"/>
   <nd ref="2592379659"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="15"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286945" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:32Z" user="Urayasu_bld_import" uid="1841514">
@@ -22743,7 +22780,7 @@
   <nd ref="2592379603"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="253286946" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:32Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286946" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379451"/>
   <nd ref="2592379461"/>
   <nd ref="2592379475"/>
@@ -22782,6 +22819,7 @@
   <nd ref="2592379469"/>
   <nd ref="2592379451"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="13"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253286947" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:32Z" user="Urayasu_bld_import" uid="1841514">
@@ -22808,13 +22846,14 @@
   <nd ref="2592379465"/>
   <tag k="building" v="roof"/>
  </way>
- <way id="253286950" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:33Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253286950" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2592379535"/>
   <nd ref="2592379471"/>
   <nd ref="2592379518"/>
   <nd ref="2592379547"/>
   <nd ref="2592379535"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
  </way>
  <way id="253286951" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:33Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592379597"/>
@@ -23619,7 +23658,7 @@
   <tag k="amenity" v="parking"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253287157" visible="true" version="1" changeset="19613169" timestamp="2013-12-24T08:04:34Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253287157" visible="true" version="2" changeset="82236495" timestamp="2020-03-16T04:36:15Z" user="gen2020" uid="10630936">
   <nd ref="2592382838"/>
   <nd ref="2592382839"/>
   <nd ref="2592382836"/>
@@ -23642,6 +23681,7 @@
   <nd ref="2592382843"/>
   <nd ref="2592382838"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="2"/>
  </way>
  <way id="253287158" visible="true" version="1" changeset="19613169" timestamp="2013-12-24T08:04:35Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2592383060"/>
@@ -24054,7 +24094,7 @@
   <nd ref="2592440991"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413165" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413165" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593363062"/>
   <nd ref="2593363043"/>
   <nd ref="2593363052"/>
@@ -24071,9 +24111,10 @@
   <nd ref="2593362915"/>
   <nd ref="2593363062"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413166" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413166" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362797"/>
   <nd ref="2593362805"/>
   <nd ref="2593362804"/>
@@ -24092,8 +24133,9 @@
   <nd ref="2593362796"/>
   <nd ref="2593362797"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
  </way>
- <way id="253413167" visible="true" version="2" changeset="19624949" timestamp="2013-12-25T02:22:39Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413167" visible="true" version="3" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362582"/>
   <nd ref="2593362586"/>
   <nd ref="2593362588"/>
@@ -24122,6 +24164,7 @@
   <nd ref="2593362582"/>
   <tag k="building" v="apartments"/>
   <tag k="building:material" v="concrete"/>
+  <tag k="height" v="10"/>
  </way>
  <way id="253413168" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2593362967"/>
@@ -24151,7 +24194,7 @@
   <nd ref="2593362967"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413169" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413169" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362639"/>
   <nd ref="2593362638"/>
   <nd ref="2593362643"/>
@@ -24185,9 +24228,10 @@
   <nd ref="2593362636"/>
   <nd ref="2593362639"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="28"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413170" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413170" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362599"/>
   <nd ref="2593362608"/>
   <nd ref="2593362612"/>
@@ -24223,8 +24267,9 @@
   <nd ref="2593362599"/>
   <tag k="building" v="apartments"/>
   <tag k="building:material" v="concrete"/>
+  <tag k="height" v="8"/>
  </way>
- <way id="253413171" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413171" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362733"/>
   <nd ref="2593362731"/>
   <nd ref="2593362736"/>
@@ -24259,9 +24304,10 @@
   <nd ref="2593362728"/>
   <nd ref="2593362733"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="26"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413172" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413172" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593363000"/>
   <nd ref="2593363002"/>
   <nd ref="2593363007"/>
@@ -24304,9 +24350,10 @@
   <nd ref="2593362966"/>
   <nd ref="2593363000"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413173" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:14Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413173" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362914"/>
   <nd ref="2593362918"/>
   <nd ref="2593362922"/>
@@ -24349,9 +24396,10 @@
   <nd ref="2593362907"/>
   <nd ref="2593362914"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413174" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:15Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413174" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362809"/>
   <nd ref="2593362811"/>
   <nd ref="2593362813"/>
@@ -24394,6 +24442,7 @@
   <nd ref="2593362806"/>
   <nd ref="2593362809"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413175" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:15Z" user="Urayasu_bld_import" uid="1841514">
@@ -24468,13 +24517,14 @@
   <nd ref="2593363053"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413184" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:15Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413184" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362867"/>
   <nd ref="2593362899"/>
   <nd ref="2593362900"/>
   <nd ref="2593362868"/>
   <nd ref="2593362867"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413185" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:15Z" user="Urayasu_bld_import" uid="1841514">
@@ -24946,13 +24996,14 @@
   <nd ref="2593362767"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413243" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:19Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413243" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362901"/>
   <nd ref="2593362884"/>
   <nd ref="2593362902"/>
   <nd ref="2593362906"/>
   <nd ref="2593362901"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413244" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:19Z" user="Urayasu_bld_import" uid="1841514">
@@ -24971,7 +25022,7 @@
   <nd ref="2593362746"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413246" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:19Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413246" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593363116"/>
   <nd ref="2593362972"/>
   <nd ref="2593363057"/>
@@ -24980,6 +25031,7 @@
   <nd ref="2593363126"/>
   <nd ref="2593363116"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413247" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:19Z" user="Urayasu_bld_import" uid="1841514">
@@ -24992,7 +25044,7 @@
   <nd ref="2593363130"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413248" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:19Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413248" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593362904"/>
   <nd ref="2593362995"/>
   <nd ref="2593363096"/>
@@ -25001,6 +25053,7 @@
   <nd ref="2593362909"/>
   <nd ref="2593362904"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413249" visible="true" version="1" changeset="19624842" timestamp="2013-12-25T01:50:19Z" user="Urayasu_bld_import" uid="1841514">
@@ -25630,7 +25683,7 @@
   <nd ref="2593368177"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413860" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413860" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593368334"/>
   <nd ref="2593368317"/>
   <nd ref="2593368342"/>
@@ -25645,7 +25698,9 @@
   <nd ref="2593368318"/>
   <nd ref="2593368334"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="1"/>
   <tag k="building:material" v="concrete"/>
+  <tag k="height" v="4"/>
  </way>
  <way id="253413861" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
   <nd ref="2593368049"/>
@@ -25702,7 +25757,7 @@
   <nd ref="2593368161"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413864" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413864" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593367949"/>
   <nd ref="2593367966"/>
   <nd ref="2593367956"/>
@@ -25724,6 +25779,7 @@
   <nd ref="2593367939"/>
   <nd ref="2593367949"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="13"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413865" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
@@ -25750,7 +25806,7 @@
   <nd ref="2593368307"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413866" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413866" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593367981"/>
   <nd ref="2593367962"/>
   <nd ref="2593367963"/>
@@ -25773,9 +25829,10 @@
   <nd ref="2593368008"/>
   <nd ref="2593367981"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="13"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413867" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413867" visible="true" version="2" changeset="82236691" timestamp="2020-03-16T04:43:38Z" user="gen2020" uid="10630936">
   <nd ref="2593368083"/>
   <nd ref="2593368114"/>
   <nd ref="2593368139"/>
@@ -25799,6 +25856,7 @@
   <nd ref="2593368030"/>
   <nd ref="2593368083"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="13"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413868" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:33Z" user="Urayasu_bld_import" uid="1841514">
@@ -25826,7 +25884,7 @@
   <nd ref="2593367957"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413869" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:34Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413869" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593367909"/>
   <nd ref="2593367908"/>
   <nd ref="2593367907"/>
@@ -25850,9 +25908,10 @@
   <nd ref="2593367916"/>
   <nd ref="2593367909"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253413870" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:34Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413870" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593368084"/>
   <nd ref="2593368097"/>
   <nd ref="2593368085"/>
@@ -25877,6 +25936,7 @@
   <nd ref="2593368099"/>
   <nd ref="2593368084"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413871" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:34Z" user="Urayasu_bld_import" uid="1841514">
@@ -25996,7 +26056,7 @@
   <nd ref="2593368323"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413875" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:34Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413875" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593368215"/>
   <nd ref="2593368186"/>
   <nd ref="2593368193"/>
@@ -26027,6 +26087,7 @@
   <nd ref="2593368182"/>
   <nd ref="2593368215"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413876" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:34Z" user="Urayasu_bld_import" uid="1841514">
@@ -26382,7 +26443,7 @@
   <nd ref="2593368415"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413916" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:37Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413916" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593367927"/>
   <nd ref="2593367921"/>
   <nd ref="2593367923"/>
@@ -26393,6 +26454,7 @@
   <nd ref="2593367911"/>
   <nd ref="2593367927"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="14"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413917" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:37Z" user="Urayasu_bld_import" uid="1841514">
@@ -26419,7 +26481,7 @@
   <nd ref="2593368440"/>
   <tag k="building" v="yes"/>
  </way>
- <way id="253413919" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:37Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253413919" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593367935"/>
   <nd ref="2593367930"/>
   <nd ref="2593367924"/>
@@ -26430,6 +26492,7 @@
   <nd ref="2593367937"/>
   <nd ref="2593367935"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="13"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253413920" visible="true" version="1" changeset="19624949" timestamp="2013-12-25T02:22:37Z" user="Urayasu_bld_import" uid="1841514">
@@ -26793,7 +26856,7 @@
   <tag k="building" v="yes"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415270" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:06Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415270" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593378978"/>
   <nd ref="2593378972"/>
   <nd ref="2593378996"/>
@@ -26815,6 +26878,7 @@
   <nd ref="2593378982"/>
   <nd ref="2593378978"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="9"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253415271" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:06Z" user="Urayasu_bld_import" uid="1841514">
@@ -26842,7 +26906,7 @@
   <tag k="building" v="roof"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415272" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:07Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415272" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593379006"/>
   <nd ref="2593379066"/>
   <nd ref="2593379068"/>
@@ -26865,9 +26929,10 @@
   <nd ref="2593379039"/>
   <nd ref="2593379006"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="10"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415273" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:07Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415273" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593378907"/>
   <nd ref="2593378895"/>
   <nd ref="2593378913"/>
@@ -26895,9 +26960,10 @@
   <nd ref="2593378909"/>
   <nd ref="2593378907"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="8"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415274" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:07Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415274" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593378728"/>
   <nd ref="2593378730"/>
   <nd ref="2593378753"/>
@@ -26927,9 +26993,10 @@
   <nd ref="2593378726"/>
   <nd ref="2593378728"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415275" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:07Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415275" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593379339"/>
   <nd ref="2593379370"/>
   <nd ref="2593379375"/>
@@ -26960,9 +27027,10 @@
   <nd ref="2593379306"/>
   <nd ref="2593379339"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="6"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415276" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:07Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415276" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593378891"/>
   <nd ref="2593378897"/>
   <nd ref="2593378893"/>
@@ -26993,6 +27061,7 @@
   <nd ref="2593378926"/>
   <nd ref="2593378891"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="11"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253415279" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:07Z" user="Urayasu_bld_import" uid="1841514">
@@ -27143,7 +27212,7 @@
   <tag k="building" v="roof"/>
   <tag k="building:material" v="concrete"/>
  </way>
- <way id="253415304" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:09Z" user="Urayasu_bld_import" uid="1841514">
+ <way id="253415304" visible="true" version="2" changeset="82236282" timestamp="2020-03-16T04:29:24Z" user="gen2020" uid="10630936">
   <nd ref="2593379354"/>
   <nd ref="2593379315"/>
   <nd ref="2593379356"/>
@@ -27151,6 +27220,7 @@
   <nd ref="2593379372"/>
   <nd ref="2593379354"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
   <tag k="building:material" v="concrete"/>
  </way>
  <way id="253415305" visible="true" version="1" changeset="19625050" timestamp="2013-12-25T02:55:09Z" user="Urayasu_bld_import" uid="1841514">
@@ -28828,6 +28898,29 @@
   <tag k="reclaimed" v="yes"/>
   <tag k="source" v="bing"/>
  </way>
+ <way id="781680339" visible="true" version="1" changeset="82236421" timestamp="2020-03-16T04:33:58Z" user="gen2020" uid="10630936">
+  <nd ref="7298146500"/>
+  <nd ref="7298146501"/>
+  <nd ref="7298146502"/>
+  <nd ref="7298146503"/>
+  <nd ref="7298146504"/>
+  <nd ref="7298146505"/>
+  <nd ref="7298146506"/>
+  <nd ref="7298146507"/>
+  <nd ref="7298146508"/>
+  <nd ref="7298146509"/>
+  <nd ref="7298146510"/>
+  <nd ref="7298146511"/>
+  <nd ref="7298146512"/>
+  <nd ref="7298146513"/>
+  <nd ref="7298146514"/>
+  <nd ref="7298146515"/>
+  <nd ref="7298146516"/>
+  <nd ref="7298146517"/>
+  <nd ref="7298146500"/>
+  <tag k="building" v="yes"/>
+  <tag k="building:levels" v="3"/>
+ </way>
  <relation id="3395951" visible="true" version="2" changeset="82232365" timestamp="2020-03-16T02:14:47Z" user="gen2020" uid="10630936">
   <member type="way" ref="253284894" role="outer"/>
   <member type="way" ref="253284896" role="inner"/>
@@ -28837,17 +28930,19 @@
   <tag k="building:material" v="concrete"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="3395980" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:37Z" user="Urayasu_bld_import" uid="1841514">
+ <relation id="3395980" visible="true" version="2" changeset="82236352" timestamp="2020-03-16T04:31:33Z" user="gen2020" uid="10630936">
   <member type="way" ref="253287026" role="outer"/>
   <member type="way" ref="253287030" role="inner"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="12"/>
   <tag k="building:material" v="concrete"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="3395981" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:38Z" user="Urayasu_bld_import" uid="1841514">
+ <relation id="3395981" visible="true" version="2" changeset="82236329" timestamp="2020-03-16T04:30:59Z" user="gen2020" uid="10630936">
   <member type="way" ref="253287028" role="outer"/>
   <member type="way" ref="253287032" role="inner"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="10"/>
   <tag k="building:material" v="concrete"/>
   <tag k="type" v="multipolygon"/>
  </relation>
@@ -28858,10 +28953,11 @@
   <tag k="building:material" v="concrete"/>
   <tag k="type" v="multipolygon"/>
  </relation>
- <relation id="3395983" visible="true" version="1" changeset="19613121" timestamp="2013-12-24T07:59:38Z" user="Urayasu_bld_import" uid="1841514">
+ <relation id="3395983" visible="true" version="2" changeset="82236710" timestamp="2020-03-16T04:44:30Z" user="gen2020" uid="10630936">
   <member type="way" ref="253287029" role="outer"/>
   <member type="way" ref="253287031" role="inner"/>
   <tag k="building" v="yes"/>
+  <tag k="building:levels" v="10"/>
   <tag k="building:material" v="concrete"/>
   <tag k="type" v="multipolygon"/>
  </relation>
