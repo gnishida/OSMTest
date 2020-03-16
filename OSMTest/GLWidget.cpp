@@ -3,11 +3,12 @@
 #include <iostream>
 #include "AssetUtils.h"
 #include "OSMImporter.h"
+#include <algorithm>
 
 GLWidget::GLWidget(QWidget *parent)
 {
 	renderingManager = nullptr;
-	eyePosition = QVector3D(0, 0, 3);
+	eyePosition = QVector3D(0, 0, 100);
 }
 
 GLWidget::~GLWidget()
@@ -53,7 +54,7 @@ void GLWidget::paintGL()
 	view.lookAt(eyePosition, QVector3D(0.0, 0.0, 0.0), QVector3D(0.0, 1.0, 0.0));
 
 	QMatrix4x4 proj;
-	proj.perspective(60.0, width() / height(), 0.1, 100.0);
+	proj.perspective(60.0, width() / height(), 0.1, 10000.0);
 
 	renderingManager->render(proj * view * model);
 }
@@ -84,7 +85,7 @@ void GLWidget::mouseMoveEvent(QMouseEvent* event)
 
 void GLWidget::wheelEvent(QWheelEvent* event)
 {
-	eyePosition.setZ(eyePosition.z() - event->delta() * 0.001);
+	eyePosition.setZ(eyePosition.z() - event->delta() * 0.1);
 	update();
 }
 
@@ -96,9 +97,34 @@ void GLWidget::makeObject()
 
 void GLWidget::loadOSM(const QString& filename)
 {
+	renderingManager->removeObjects();
 	std::vector<BuildingParam> buildingParams;
 	OSMImporter::import(filename, buildingParams);
+	double minx = std::numeric_limits<double>::max();
+	double maxx = std::numeric_limits<double>::min();
+	double miny = std::numeric_limits<double>::max();
+	double maxy = std::numeric_limits<double>::min();
 	for (const auto& buildingParam : buildingParams) {
-
+		for (const auto& coord : buildingParam.footprint) {
+			minx = std::min((double)coord.x, minx);
+			maxx = std::max((double)coord.x, maxx);
+			miny = std::min((double)coord.y, miny);
+			maxy = std::max((double)coord.y, maxy);
+		}
 	}
+
+	double translate_x = (minx + maxx) / 2;
+	double translate_y = (miny + maxy) / 2;
+
+	for (auto& buildingParam : buildingParams) {
+		for (auto& coord : buildingParam.footprint) {
+			coord.x = coord.x - translate_x;
+			coord.y = coord.y - translate_y;
+		}
+	}
+
+	for (const auto& buildingParam : buildingParams) {
+		renderingManager->addObject("images/facade.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+	}
+	update();
 }

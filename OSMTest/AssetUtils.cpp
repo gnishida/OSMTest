@@ -36,36 +36,36 @@ std::vector<Vertex> AssetUtils::createSphere(float radius) {
 	return vertices;
 }
 
-std::vector<Vertex> AssetUtils::createPrism(std::vector<std::pair<float, float>> polygon, float height) {
+std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygon, float height) {
 	std::vector<Vertex> vertices;
 	const int NUM_VERTEX = polygon.size();
 
 	std::vector<float> lengths;
 	lengths.push_back(0);
 	for (int i = 0; i < NUM_VERTEX; i++) {
-		const float x1 = polygon[i].first;
-		const float y1 = polygon[i].second;
+		const float& x1 = polygon[i].x;
+		const float& y1 = polygon[i].y;
 		const int next = (i + 1) % NUM_VERTEX;
-		const float x2 = polygon[next].first;
-		const float y2 = polygon[next].second;
+		const float& x2 = polygon[next].x;
+		const float& y2 = polygon[next].y;
 		float length = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 		lengths.push_back(length + lengths[i]);
 	}
-	const float TOT_LENGTH = lengths[NUM_VERTEX];
+	const float& TOT_LENGTH = lengths[NUM_VERTEX];
 
 	for (int i = 0; i < NUM_VERTEX; i++) {
-		const float x1 = polygon[i].first;
-		const float y1 = polygon[i].second;
+		const float& x1 = polygon[i].x;
+		const float& y1 = polygon[i].y;
 		const int next = (i + 1) % NUM_VERTEX;
-		const float x2 = polygon[next].first;
-		const float y2 = polygon[next].second;
-		vertices.push_back({ x1, y1, 0, lengths[i] / TOT_LENGTH, 1 });
-		vertices.push_back({ x2, y2, 0, lengths[i + 1] / TOT_LENGTH, 1 });
-		vertices.push_back({ x2, y2, height, lengths[i + 1] / TOT_LENGTH, 0 });
+		const float& x2 = polygon[next].x;
+		const float& y2 = polygon[next].y;
+		vertices.push_back({ x1, y1, 0, 1 - lengths[i] / TOT_LENGTH, 0 });
+		vertices.push_back({ x2, y2, 0, 1 - lengths[i + 1] / TOT_LENGTH, 0 });
+		vertices.push_back({ x2, y2, height, 1 - lengths[i + 1] / TOT_LENGTH, 1 });
 
-		vertices.push_back({ x1, y1, 0, lengths[i] / TOT_LENGTH, 1 });
-		vertices.push_back({ x2, y2, height, lengths[i + 1] / TOT_LENGTH, 0 });
-		vertices.push_back({ x1, y1, height, lengths[i] / TOT_LENGTH, 0 });
+		vertices.push_back({ x1, y1, 0, 1 - lengths[i] / TOT_LENGTH, 0 });
+		vertices.push_back({ x2, y2, height, 1 - lengths[i + 1] / TOT_LENGTH, 1 });
+		vertices.push_back({ x1, y1, height, 1 - lengths[i] / TOT_LENGTH, 1 });
 	}
 
 	return vertices;
