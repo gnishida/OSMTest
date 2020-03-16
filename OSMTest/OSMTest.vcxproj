@@ -59,6 +59,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>..\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -72,6 +73,7 @@
       <DebugInformationFormat />
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>..\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -82,9 +84,11 @@
   <ItemGroup>
     <ClCompile Include="Asset.cpp" />
     <ClCompile Include="AssetUtils.cpp" />
+    <ClCompile Include="BuildingParam.cpp" />
     <ClCompile Include="GLWidget.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="OSMImporter.cpp" />
     <ClCompile Include="RenderingManager.cpp" />
     <ClCompile Include="Vertex.cpp" />
   </ItemGroup>
@@ -100,6 +104,8 @@
   <ItemGroup>
     <ClInclude Include="Asset.h" />
     <ClInclude Include="AssetUtils.h" />
+    <ClInclude Include="BuildingParam.h" />
+    <ClInclude Include="OSMImporter.h" />
     <ClInclude Include="RenderingManager.h" />
     <ClInclude Include="Vertex.h" />
     <QtMoc Include="GLWidget.h" />

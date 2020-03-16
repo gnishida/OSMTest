@@ -15,5 +15,6 @@ public:
 
 	void setViewport(int width, int height);
 	void addObject(const char* filename, const std::vector<Vertex>& vertices);
+	void removeObjects();
 	void render(const QMatrix4x4& cameraMatrix);
 };

@@ -2,6 +2,7 @@
 #include <QMouseEvent>
 #include <iostream>
 #include "AssetUtils.h"
+#include "OSMImporter.h"
 
 GLWidget::GLWidget(QWidget *parent)
 {
@@ -95,5 +96,9 @@ void GLWidget::makeObject()
 
 void GLWidget::loadOSM(const QString& filename)
 {
+	std::vector<BuildingParam> buildingParams;
+	OSMImporter::import(filename, buildingParams);
+	for (const auto& buildingParam : buildingParams) {
 
+	}
 }

@@ -51,6 +51,16 @@ void RenderingManager::addObject(const char* filename, const std::vector<Vertex>
 	asset->addVertices(vertices);
 }
 
+void RenderingManager::removeObjects()
+{
+	for (auto it = assets.begin(); it != assets.end(); it++) {
+		Asset* asset = it->second;
+		delete asset;
+		asset = nullptr;
+	}
+	assets.clear();
+}
+
 void RenderingManager::render(const QMatrix4x4& cameraMatrix)
 {
 	glClearColor(0, 0.1, 0.1, 1);
