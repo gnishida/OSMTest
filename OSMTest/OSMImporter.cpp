@@ -7,6 +7,7 @@
 #include <QDomDocument>
 #include <string>
 #include <iostream>
+#include "UTM.h"
 
 OSMImporter::OSMImporter() {
 }
@@ -124,6 +125,12 @@ void OSMImporter::import(const QString& filename, float& minX, float& minY, floa
 }
 
 glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon, double center_lat, double center_lon) {
+	int zone = 54;
+	double x = 0;
+	double y = 0;
+	zone = LatLonToUTMXY(lat, lon, zone, x, y);
+	
+	/*
 	const double radius = 6379000;
 	double dlat = (lat - center_lat) / 180 * glm::pi<double>();
 	double dlon = (lon - center_lon) / 180 * glm::pi<double>();
@@ -131,4 +138,6 @@ glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon, double center_
 	double x = radius * std::cos(center_lat) * dlon;
 	double y = radius * dlat;
 	return{ x, y };
+	*/
+	return { x, y };
 }
