@@ -50,8 +50,6 @@ void OSMImporter::import(const QString& filename, float& minX, float& minY, floa
 			double lon = element.attribute("lon").toDouble();
 			double lat = element.attribute("lat").toDouble();
 			glm::vec2 pos = convertLatLonToUTM(lat, lon, centerlat, centerlon);
-			if (minX > maxX) pos.x = -pos.x;
-			if (minY > maxY) pos.y = -pos.y;
 			nodes[id] = pos;
 		}
 		else if (element.tagName() == "way") {
@@ -117,11 +115,6 @@ void OSMImporter::import(const QString& filename, float& minX, float& minY, floa
 
 		element = element.nextSiblingElement();
 	}
-
-	// when we convert the longitude/latitude to the UTM, the min/max might be swapped,
-	// so we swap them if necessary.
-	if (minX > maxX) std::swap(minX, maxX);
-	if (minY > maxY) std::swap(minY, maxY);
 }
 
 glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon, double center_lat, double center_lon) {
