@@ -4,6 +4,7 @@
 #include "AssetUtils.h"
 #include "OSMImporter.h"
 #include <algorithm>
+#include <stdlib.h>
 
 GLWidget::GLWidget(QWidget *parent)
 {
@@ -116,7 +117,30 @@ void GLWidget::loadOSM(const QString& filename)
 	renderingManager->addObject("images/shin_urayasu.png", AssetUtils::createRectangle(maxX - minX, maxY - minY));
 
 	for (const auto& buildingParam : buildingParams) {
-		renderingManager->addObject("images/facade.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		int random = rand() % 7;
+		if (random == 0) {
+			renderingManager->addObject("images/facade.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+		else if (random == 1) {
+			renderingManager->addObject("images/facade2.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+		else if (random == 2) {
+			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+		else if (random == 3) {
+			renderingManager->addObject("images/facade4.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+		else if (random == 4) {
+			renderingManager->addObject("images/facade5.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+		else if (random == 5) {
+			renderingManager->addObject("images/facade6.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+		else {
+			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+		}
+
+		renderingManager->addObject("images/roof.png", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height));
 	}
 	update();
 }
