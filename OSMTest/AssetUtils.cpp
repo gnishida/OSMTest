@@ -1,4 +1,6 @@
 #include "AssetUtils.h"
+#include <algorithm>
+#include <limits>
 
 std::vector<Vertex> AssetUtils::createSphere(float radius) {
 	std::vector<Vertex> vertices;
@@ -73,6 +75,39 @@ std::vector<Vertex> AssetUtils::createRectangle(float width, float length) {
 	vertices.push_back({ x1, y1, 0, 0, 0 });
 	vertices.push_back({ x2, y2, 0, 1, 1 });
 	vertices.push_back({ x1, y2, 0, 0, 1 });
+
+	return vertices;
+}
+
+std::vector<Vertex> AssetUtils::createPolygon(const std::vector<glm::vec2>& polygon, float height) {
+	std::vector<Vertex> vertices;
+	const int NUM_VERTEX = polygon.size();
+
+	float x_max = -std::numeric_limits<float>::max();;
+	float x_min = std::numeric_limits<float>::max();;
+	float y_max = -std::numeric_limits<float>::max();;
+	float y_min = std::numeric_limits<float>::max();;
+	for (int i = 0; i < NUM_VERTEX; i++) {
+		x_max = std::max(x_max, polygon[i].x);
+		x_min = std::min(x_min, polygon[i].x);
+		y_max = std::max(y_max, polygon[i].y);
+		y_min = std::min(y_min, polygon[i].y);
+	}
+	float x_average = (x_max + x_min) / 2;
+	float y_average = (y_max + y_min) / 2;
+
+	for (int i = 0; i < NUM_VERTEX; i++) {
+		const float& x1 = polygon[i].x;
+		const float& y1 = polygon[i].y;
+		const int next = (i + 1) % NUM_VERTEX;
+		const float& x2 = polygon[next].x;
+		const float& y2 = polygon[next].y;
+		const float length = glm::length(glm::vec2(x2 - x1, y2 - y1));
+
+		vertices.push_back({ x1, y1, height, 0, 0 });
+		vertices.push_back({ x2, y2, height, 1, 0.2 });
+		vertices.push_back({ x_average, y_average, height, 0.4, 1 });
+	}
 
 	return vertices;
 }
