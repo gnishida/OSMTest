@@ -111,3 +111,42 @@ std::vector<Vertex> AssetUtils::createPolygon(const std::vector<glm::vec2>& poly
 
 	return vertices;
 }
+
+std::vector<Vertex> AssetUtils::createPolygon2(const std::vector<glm::vec2>& polygon, float height, float minX, float minY, float maxX, float maxY) {
+	std::vector<Vertex> vertices;
+	const int NUM_VERTEX = polygon.size();
+
+	float x_max = -std::numeric_limits<float>::max();;
+	float x_min = std::numeric_limits<float>::max();;
+	float y_max = -std::numeric_limits<float>::max();;
+	float y_min = std::numeric_limits<float>::max();;
+	for (int i = 0; i < NUM_VERTEX; i++) {
+		x_max = std::max(x_max, polygon[i].x);
+		x_min = std::min(x_min, polygon[i].x);
+		y_max = std::max(y_max, polygon[i].y);
+		y_min = std::min(y_min, polygon[i].y);
+	}
+	float x_average = (x_max + x_min) / 2;
+	float y_average = (y_max + y_min) / 2;
+
+	float u3 = (x_average - minX) / (maxX - minX);
+	float v3 = (y_average - minY) / (maxY - minY);
+
+	for (int i = 0; i < NUM_VERTEX; i++) {
+		const float& x1 = polygon[i].x;
+		const float& y1 = polygon[i].y;
+		const int next = (i + 1) % NUM_VERTEX;
+		const float& x2 = polygon[next].x;
+		const float& y2 = polygon[next].y;
+		const float length = glm::length(glm::vec2(x2 - x1, y2 - y1));
+		float u1 = (x1 - minX) / (maxX - minX);
+		float v1 = (y1 - minY) / (maxY - minY);
+		float u2 = (x2 - minX) / (maxX - minX);
+		float v2 = (y2 - minY) / (maxY - minY);
+		vertices.push_back({ x1, y1, height, u1, v1 });
+		vertices.push_back({ x2, y2, height, u2, v2 });
+		vertices.push_back({ x_average, y_average, height, u3, v3 });
+	}
+
+	return vertices;
+}
