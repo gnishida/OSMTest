@@ -35,13 +35,10 @@ void OSMImporter::import(const QString& filename, float& minX, float& minY, floa
 			double minlon = element.attribute("minlon").toDouble();
 			double maxlon = element.attribute("maxlon").toDouble();
 
-			centerlat = (minlat + maxlat) * 0.5f;
-			centerlon = (minlon + maxlon) * 0.5f;
-
-			glm::vec2 minPt = convertLatLonToUTM(minlat, minlon, centerlat, centerlon);
+			glm::vec2 minPt = convertLatLonToUTM(minlat, minlon);
 			minX = minPt.x;
 			minY = minPt.y;
-			glm::vec2 maxPt = convertLatLonToUTM(maxlat, maxlon, centerlat, centerlon);
+			glm::vec2 maxPt = convertLatLonToUTM(maxlat, maxlon);
 			maxX = maxPt.x;
 			maxY = maxPt.y;
 		}
@@ -49,7 +46,7 @@ void OSMImporter::import(const QString& filename, float& minX, float& minY, floa
 			unsigned long long id = element.attribute("id").toULongLong();
 			double lon = element.attribute("lon").toDouble();
 			double lat = element.attribute("lat").toDouble();
-			glm::vec2 pos = convertLatLonToUTM(lat, lon, centerlat, centerlon);
+			glm::vec2 pos = convertLatLonToUTM(lat, lon);
 			nodes[id] = pos;
 		}
 		else if (element.tagName() == "way") {
@@ -117,20 +114,11 @@ void OSMImporter::import(const QString& filename, float& minX, float& minY, floa
 	}
 }
 
-glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon, double center_lat, double center_lon) {
+glm::vec2 OSMImporter::convertLatLonToUTM(double lat, double lon) {
 	int zone = 54;
 	double x = 0;
 	double y = 0;
 	zone = LatLonToUTMXY(lat, lon, zone, x, y);
 	
-	/*
-	const double radius = 6379000;
-	double dlat = (lat - center_lat) / 180 * glm::pi<double>();
-	double dlon = (lon - center_lon) / 180 * glm::pi<double>();
-
-	double x = radius * std::cos(center_lat) * dlon;
-	double y = radius * dlat;
-	return{ x, y };
-	*/
 	return { x, y };
 }
