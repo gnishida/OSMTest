@@ -104,8 +104,8 @@ void GLWidget::loadOSM(const QString& filename)
 	std::vector<BuildingParam> buildingParams;
 	OSMImporter::import(filename, minX, minY, maxX, maxY, buildingParams);
 
-	double translate_x = (minX + maxX) / 2;
-	double translate_y = (minY + maxY) / 2;
+	float translate_x = (minX + maxX) / 2;
+	float translate_y = (minY + maxY) / 2;
 
 	for (auto& buildingParam : buildingParams) {
 		for (auto& coord : buildingParam.footprint) {
@@ -113,6 +113,10 @@ void GLWidget::loadOSM(const QString& filename)
 			coord.y = coord.y - translate_y;
 		}
 	}
+	minX -= translate_x;
+	minY -= translate_y;
+	maxX -= translate_x;
+	maxY -= translate_y;
 
 	renderingManager->addObject("images/shin_urayasu.png", AssetUtils::createRectangle(maxX - minX, maxY - minY));
 
@@ -140,7 +144,7 @@ void GLWidget::loadOSM(const QString& filename)
 			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
 		}
 
-		renderingManager->addObject("images/roof.png", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height));
+		renderingManager->addObject("images/shin_urayasu.png", AssetUtils::createPolygon2(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
 	}
 	update();
 }
