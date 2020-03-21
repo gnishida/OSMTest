@@ -1,4 +1,5 @@
 #include "Asset.h"
+#include <iostream>
 
 Asset::Asset(QOpenGLShaderProgram* program) : program(program)
 {
@@ -26,7 +27,13 @@ void Asset::setTexture(const char* filename)
 		texture->destroy();
 		texture = nullptr;
 	}
-	texture = new QOpenGLTexture(QImage(filename).mirrored());
+	QImage img(filename);
+	if (img.isNull()) {
+		std::cerr << "Failed to load image: " << filename << std::endl;
+		return;
+	}
+
+	texture = new QOpenGLTexture(img.mirrored());
 }
 
 /**

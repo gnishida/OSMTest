@@ -118,7 +118,7 @@ void GLWidget::loadOSM(const QString& filename)
 	maxX -= translate_x;
 	maxY -= translate_y;
 
-	renderingManager->addObject("images/shin_urayasu.png", AssetUtils::createRectangle(maxX - minX, maxY - minY));
+	renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createRectangle(maxX - minX, maxY - minY));
 
 	for (const auto& buildingParam : buildingParams) {
 		int random = rand() % 7;
@@ -144,7 +144,7 @@ void GLWidget::loadOSM(const QString& filename)
 			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
 		}
 
-		renderingManager->addObject("images/shin_urayasu.png", AssetUtils::createPolygon2(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
+		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon2(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
 	}
 	update();
 }
