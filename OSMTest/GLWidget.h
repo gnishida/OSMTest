@@ -32,9 +32,6 @@ protected:
 	void mouseMoveEvent(QMouseEvent* event) override;
 	void wheelEvent(QWheelEvent* event) override;
 
-private:
-	void makeObject();
-
 public:
 	void loadOSM(const QString& filename);
 };

@@ -1,6 +1,18 @@
 #include "AssetUtils.h"
+
+#include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
+#include <CGAL/Partition_traits_2.h>
+#include <CGAL/partition_2.h>
+#include <CGAL/point_generators_2.h>
+#include <CGAL/random_polygon_2.h>
+#include <CGAL/Polygon_2.h>
+#include <CGAL/create_offset_polygons_2.h>
+
 #include <algorithm>
 #include <limits>
+
+typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
+typedef CGAL::Partition_traits_2<K> Traits;
 
 std::vector<Vertex> AssetUtils::createSphere(float radius) {
 	std::vector<Vertex> vertices;
@@ -62,90 +74,103 @@ std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygo
 	return vertices;
 }
 
-std::vector<Vertex> AssetUtils::createRectangle(float width, float length) {
+std::vector<Vertex> AssetUtils::createRectangle(float width, float length, float height) {
 	std::vector<Vertex> vertices;
 	const float x1 = -width / 2;
 	const float x2 = width / 2;
 	const float y1 = -length / 2;
 	const float y2 = length / 2;
-	vertices.push_back({ x1, y1, 0, 0, 0 });
-	vertices.push_back({ x2, y1, 0, 1, 0 });
-	vertices.push_back({ x2, y2, 0, 1, 1 });
+	vertices.push_back({ x1, y1, height, 0, 0 });
+	vertices.push_back({ x2, y1, height, 1, 0 });
+	vertices.push_back({ x2, y2, height, 1, 1 });
 
-	vertices.push_back({ x1, y1, 0, 0, 0 });
-	vertices.push_back({ x2, y2, 0, 1, 1 });
-	vertices.push_back({ x1, y2, 0, 0, 1 });
+	vertices.push_back({ x1, y1, height, 0, 0 });
+	vertices.push_back({ x2, y2, height, 1, 1 });
+	vertices.push_back({ x1, y2, height, 0, 1 });
 
 	return vertices;
 }
 
-std::vector<Vertex> AssetUtils::createPolygon(const std::vector<glm::vec2>& polygon, float height) {
+std::vector<Vertex> AssetUtils::createConvexPolygon(const std::vector<glm::vec2>& polygon, float height) {
+	if (polygon.size() < 3) return {};
+
 	std::vector<Vertex> vertices;
-	const int NUM_VERTEX = polygon.size();
 
-	float x_max = -std::numeric_limits<float>::max();;
-	float x_min = std::numeric_limits<float>::max();;
-	float y_max = -std::numeric_limits<float>::max();;
-	float y_min = std::numeric_limits<float>::max();;
-	for (int i = 0; i < NUM_VERTEX; i++) {
-		x_max = std::max(x_max, polygon[i].x);
-		x_min = std::min(x_min, polygon[i].x);
-		y_max = std::max(y_max, polygon[i].y);
-		y_min = std::min(y_min, polygon[i].y);
-	}
-	float x_average = (x_max + x_min) / 2;
-	float y_average = (y_max + y_min) / 2;
+	const float& x0 = polygon[0].x;
+	const float& y0 = polygon[0].y;
 
-	for (int i = 0; i < NUM_VERTEX; i++) {
+	for (int i = 0; i < polygon.size(); i++) {
 		const float& x1 = polygon[i].x;
 		const float& y1 = polygon[i].y;
-		const int next = (i + 1) % NUM_VERTEX;
+		const int next = (i + 1) % polygon.size();
 		const float& x2 = polygon[next].x;
 		const float& y2 = polygon[next].y;
-		const float length = glm::length(glm::vec2(x2 - x1, y2 - y1));
 
-		vertices.push_back({ x1, y1, height, 0, 0 });
-		vertices.push_back({ x2, y2, height, 1, 0.2 });
-		vertices.push_back({ x_average, y_average, height, 0.4, 1 });
+		vertices.push_back({ x0, y0, height, 0, 0 });
+		vertices.push_back({ x1, y1, height, 1, 0.2 });
+		vertices.push_back({ x2, y2, height, 0.4, 1 });
 	}
 
 	return vertices;
 }
 
-std::vector<Vertex> AssetUtils::createPolygon2(const std::vector<glm::vec2>& polygon, float height, float minX, float minY, float maxX, float maxY) {
+std::vector<Vertex> AssetUtils::createConvexPolygon(const std::vector<glm::vec2>& polygon, float height, float minX, float minY, float maxX, float maxY) {
+	if (polygon.size() < 3) return {};
+
 	std::vector<Vertex> vertices;
-	const int NUM_VERTEX = polygon.size();
 
-	float x_max = -std::numeric_limits<float>::max();;
-	float x_min = std::numeric_limits<float>::max();;
-	float y_max = -std::numeric_limits<float>::max();;
-	float y_min = std::numeric_limits<float>::max();;
-	for (int i = 0; i < NUM_VERTEX; i++) {
-		x_max = std::max(x_max, polygon[i].x);
-		x_min = std::min(x_min, polygon[i].x);
-		y_max = std::max(y_max, polygon[i].y);
-		y_min = std::min(y_min, polygon[i].y);
-	}
-	float x_average = (x_max + x_min) / 2;
-	float y_average = (y_max + y_min) / 2;
+	const float& x0 = polygon[0].x;
+	const float& y0 = polygon[0].y;
 
-	float u3 = (x_average - minX) / (maxX - minX);
-	float v3 = (y_average - minY) / (maxY - minY);
+	float u0 = (polygon[0].x - minX) / (maxX - minX);
+	float v0 = (polygon[0].y - minY) / (maxY - minY);
 
-	for (int i = 0; i < NUM_VERTEX; i++) {
+	for (int i = 0; i < polygon.size(); i++) {
 		const float& x1 = polygon[i].x;
 		const float& y1 = polygon[i].y;
-		const int next = (i + 1) % NUM_VERTEX;
-		const float& x2 = polygon[next].x;
-		const float& y2 = polygon[next].y;
-		const float length = glm::length(glm::vec2(x2 - x1, y2 - y1));
 		float u1 = (x1 - minX) / (maxX - minX);
 		float v1 = (y1 - minY) / (maxY - minY);
+
+		const int next = (i + 1) % polygon.size();
+		const float& x2 = polygon[next].x;
+		const float& y2 = polygon[next].y;
 		float u2 = (x2 - minX) / (maxX - minX);
 		float v2 = (y2 - minY) / (maxY - minY);
+
+		vertices.push_back({ x0, y0, height, u0, v0 });
 		vertices.push_back({ x1, y1, height, u1, v1 });
 		vertices.push_back({ x2, y2, height, u2, v2 });
-		vertices.push_back({ x_average, y_average, height, u3, v3 });
+	}
+
+	return vertices;
+}
+
+std::vector<Vertex> AssetUtils::createPolygon(const std::vector<glm::vec2>& polygon, float height, float minX, float minY, float maxX, float maxY) {
+	if (polygon.size() < 3) return {};
+
+	Traits::Polygon_2 cga_polygon;
+	for (int i = 0; i < polygon.size(); ++i) {
+		cga_polygon.push_back(Traits::Point_2(polygon[i].x, polygon[i].y));
+	}
+
+	if (cga_polygon.is_clockwise_oriented()) {
+		cga_polygon.reverse_orientation();
+	}
+
+	// tesselate the concave polygon
+	std::list<Traits::Polygon_2> partition_polys;
+	Traits partition_traits;
+	CGAL::greene_approx_convex_partition_2(cga_polygon.vertices_begin(), cga_polygon.vertices_end(), std::back_inserter(partition_polys), partition_traits);
+
+	std::vector<Vertex> vertices;
+
+	for (auto fit = partition_polys.begin(); fit != partition_polys.end(); ++fit) {
+		std::vector<glm::vec2> convexPolygon;
+		for (auto vit = fit->vertices_begin(); vit != fit->vertices_end(); ++vit) {
+			convexPolygon.push_back({ (float)vit->x(), (float)vit->y() });
+		}
+		std::vector<Vertex> subVertices = createConvexPolygon(convexPolygon, height, minX, minY, maxX, maxY);
+		vertices.insert(vertices.end(), subVertices.begin(), subVertices.end());
 	}
 
 	return vertices;

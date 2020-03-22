@@ -41,7 +41,6 @@ void GLWidget::rotateBy(const QVector3D& rotationAngle)
 void GLWidget::initializeGL()
 {
 	renderingManager = new RenderingManager();
-	makeObject();
 }
 
 void GLWidget::paintGL()
@@ -88,12 +87,6 @@ void GLWidget::wheelEvent(QWheelEvent* event)
 {
 	eyePosition.setZ(eyePosition.z() - event->delta() * 0.1);
 	update();
-}
-
-void GLWidget::makeObject()
-{
-	renderingManager->addObject("images/side1.png", AssetUtils::createRectangle(0.5, 0.5));
-	renderingManager->addObject("images/earth.jpg", AssetUtils::createSphere(0.35));
 }
 
 void GLWidget::loadOSM(const QString& filename)
@@ -144,7 +137,7 @@ void GLWidget::loadOSM(const QString& filename)
 			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
 		}
 
-		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon2(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
+		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
 	}
 	update();
 }
