@@ -42,7 +42,10 @@ void GLWidget::rotateBy(const QVector3D& rotationAngle)
 void GLWidget::translateBy(float dx, float dy)
 {
 	const float theta = glm::radians(rotation.z());
-	const float scale = 2 * eyePosition.z() * std::tan(glm::radians(fov) / 2) / width();
+	const float viewX = std::tan(glm::radians(rotation.x())) * eyePosition.z();
+	const float viewY = std::tan(glm::radians(rotation.y())) * eyePosition.z();
+	const float adjustedZ = sqrt(viewX * viewX + viewY * viewY + eyePosition.z() * eyePosition.z());
+	const float scale = 2 * adjustedZ * std::tan(glm::radians(fov) / 2) / width();
 	float tmpx = dx * std::cos(theta) + dy * std::sin(theta);
 	float tmpy = -dx * std::sin(theta) + dy * std::cos(theta);
 	tmpx *= scale;
