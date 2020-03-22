@@ -102,7 +102,7 @@ void GLWidget::paintGL()
 	view.lookAt(eyePosition, QVector3D(0.0, 0.0, 0.0), QVector3D(0.0, 1.0, 0.0));
 
 	QMatrix4x4 proj;
-	proj.perspective(fov, width() / height(), 0.1, 10000.0);
+	proj.perspective(fov, (float)width() / height(), 0.1, 10000.0);
 
 	renderingManager->render(proj * view * model);
 }
