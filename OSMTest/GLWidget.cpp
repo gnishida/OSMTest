@@ -105,11 +105,9 @@ void GLWidget::mouseMoveEvent(QMouseEvent* event)
 	int dy = event->y() - lastPos.y();
 
 	if (event->buttons() & Qt::LeftButton) {
-		rotateBy(QVector3D(dy, dx, 0));
-	}
-	else if (event->buttons() & Qt::RightButton) {
 		rotateBy(QVector3D(dy, 0, dx));
 	}
+
 	lastPos = event->pos();
 }
 
