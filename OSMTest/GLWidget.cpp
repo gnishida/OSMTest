@@ -10,6 +10,7 @@ GLWidget::GLWidget(QWidget *parent)
 {
 	renderingManager = nullptr;
 	eyePosition = QVector3D(0, 0, 100);
+	fov = 60.0f;
 }
 
 GLWidget::~GLWidget()
@@ -35,6 +36,19 @@ QSize GLWidget::sizeHint() const
 void GLWidget::rotateBy(const QVector3D& rotationAngle)
 {
 	rotation += rotationAngle;
+	update();
+}
+
+void GLWidget::translateBy(float dx, float dy)
+{
+	const float theta = glm::radians(rotation.z());
+	const float scale = 2 * eyePosition.z() * std::tan(glm::radians(fov) / 2) / width();
+	float tmpx = dx * std::cos(theta) + dy * std::sin(theta);
+	float tmpy = -dx * std::sin(theta) + dy * std::cos(theta);
+	tmpx *= scale;
+	tmpy *= scale;
+	translation.setX(translation.x() + tmpx);
+	translation.setY(translation.y() + tmpy);
 	update();
 }
 
@@ -79,12 +93,13 @@ void GLWidget::paintGL()
 	model.rotate(rotation.x(), 1.0f, 0.0f, 0.0f);
 	model.rotate(rotation.y(), 0.0f, 1.0f, 0.0f);
 	model.rotate(rotation.z(), 0.0f, 0.0f, 1.0f);
+	model.translate(translation.x(), translation.y(), translation.z());
 
 	QMatrix4x4 view;
 	view.lookAt(eyePosition, QVector3D(0.0, 0.0, 0.0), QVector3D(0.0, 1.0, 0.0));
 
 	QMatrix4x4 proj;
-	proj.perspective(60.0, width() / height(), 0.1, 10000.0);
+	proj.perspective(fov, width() / height(), 0.1, 10000.0);
 
 	renderingManager->render(proj * view * model);
 }
@@ -105,7 +120,12 @@ void GLWidget::mouseMoveEvent(QMouseEvent* event)
 	int dy = event->y() - lastPos.y();
 
 	if (event->buttons() & Qt::LeftButton) {
-		rotateBy(QVector3D(dy, 0, dx));
+		if (ctrlPressed) {
+			rotateBy(QVector3D(dy, 0, dx));
+		}
+		else {
+			translateBy(dx, -dy);
+		}
 	}
 
 	lastPos = event->pos();

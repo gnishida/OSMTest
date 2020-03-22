@@ -14,7 +14,9 @@ private:
 	QPoint lastPos;
 	QVector3D eyePosition;
 	QVector3D rotation;
+	QVector3D translation;
 	RenderingManager* renderingManager;
+	float fov;
 
 	// key status
 	bool shiftPressed;
@@ -27,6 +29,7 @@ public:
 	QSize minimumSizeHint() const override;
 	QSize sizeHint() const override;
 	void rotateBy(const QVector3D& rotationAngle);
+	void translateBy(float x, float y);
 
 	void keyPressEvent(QKeyEvent* e);
 	void keyReleaseEvent(QKeyEvent* e);
