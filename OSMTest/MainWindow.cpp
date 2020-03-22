@@ -14,6 +14,14 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 	connect(ui.actionOpen, SIGNAL(triggered()), this, SLOT(onOpen()));
 }
 
+void MainWindow::keyPressEvent(QKeyEvent *e) {
+	glWidget.keyPressEvent(e);
+}
+
+void MainWindow::keyReleaseEvent(QKeyEvent* e) {
+	glWidget.keyReleaseEvent(e);
+}
+
 void MainWindow::onOpen()
 {
 	QString filename = QFileDialog::getOpenFileName(this, tr("Open OSM file..."), "", tr("OSM Files (*.osm)"));

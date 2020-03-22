@@ -16,6 +16,10 @@ private:
 	QVector3D rotation;
 	RenderingManager* renderingManager;
 
+	// key status
+	bool shiftPressed;
+	bool ctrlPressed;
+
 public:
 	explicit GLWidget(QWidget *parent = 0);
 	~GLWidget();
@@ -23,6 +27,9 @@ public:
 	QSize minimumSizeHint() const override;
 	QSize sizeHint() const override;
 	void rotateBy(const QVector3D& rotationAngle);
+
+	void keyPressEvent(QKeyEvent* e);
+	void keyReleaseEvent(QKeyEvent* e);
 
 protected:
 	void initializeGL() override;

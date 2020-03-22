@@ -3,6 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtGui/QWindow>
 #include <QtGui/QOpenGLFunctions>
+#include <QKeyEvent>
 
 #include "GLWidget.h"
 #include "ui_MainWindow.h"
@@ -13,6 +14,10 @@ class MainWindow : public QMainWindow
 
 public:
 	MainWindow(QWidget *parent = Q_NULLPTR);
+
+protected:
+	void keyPressEvent(QKeyEvent* e);
+	void keyReleaseEvent(QKeyEvent* e);
 
 public slots:
 	void onOpen();

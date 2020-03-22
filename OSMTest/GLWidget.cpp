@@ -38,6 +38,36 @@ void GLWidget::rotateBy(const QVector3D& rotationAngle)
 	update();
 }
 
+void GLWidget::keyPressEvent(QKeyEvent *e) {
+	ctrlPressed = false;
+	shiftPressed = false;
+
+	if (e->modifiers() & Qt::ControlModifier) {
+		ctrlPressed = true;
+	}
+	if (e->modifiers() & Qt::ShiftModifier) {
+		shiftPressed = true;
+	}
+
+	switch (e->key()) {
+	default:
+		break;
+	}
+}
+
+void GLWidget::keyReleaseEvent(QKeyEvent* e) {
+	switch (e->key()) {
+	case Qt::Key_Control:
+		ctrlPressed = false;
+		break;
+	case Qt::Key_Shift:
+		shiftPressed = false;
+		break;
+	default:
+		break;
+	}
+}
+
 void GLWidget::initializeGL()
 {
 	renderingManager = new RenderingManager();
