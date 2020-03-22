@@ -36,7 +36,6 @@ def main():
     
     image = Image.new("RGB", (image_width, image_height))
     
-    cnt = 0
     for y_index in range(num_y_steps):
         lat1 = args.max_lat - LAT_STEP * y_index
         lat2 = args.max_lat - LAT_STEP * (y_index + 1)
@@ -52,13 +51,12 @@ def main():
             x = TILE_WIDTH * x_index
             
             print("downloading {}: ({}, {})".format(cnt, (lat1 + lat2) * 0.5, (lon1 + lon2) * 0.5))
-            if cnt >= 27 * 13:
-                img = download_image((lat1 + lat2) * 0.5, (lon1 + lon2) * 0.5, args.key)
-                image.paste(img, (x, y))
-                time.sleep(3)
+            img = download_image((lat1 + lat2) * 0.5, (lon1 + lon2) * 0.5, args.key)
+            image.paste(img, (x, y))
+            time.sleep(3)
             
             cnt += 1
-            if cnt % 5 == 0 and cnt >= 27 * 13:
+            if cnt % 5 == 0:
                 while True:
                     try:
                         image.save("__download.png")
