@@ -68,7 +68,7 @@ std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygo
 
 		vertices.push_back({ x1, y1, 0, 0, 0 });
 		vertices.push_back({ x2, y2, height, length / 11.0f, height / 10.0f });
-		vertices.push_back({ x1, y1, height, 0, height / 11.0f });
+		vertices.push_back({ x1, y1, height, 0, height / 10.0f });
 	}
 
 	return vertices;
