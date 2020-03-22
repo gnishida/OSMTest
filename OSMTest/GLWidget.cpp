@@ -9,7 +9,7 @@
 GLWidget::GLWidget(QWidget *parent)
 {
 	renderingManager = nullptr;
-	eyePosition = QVector3D(0, 0, 100);
+	eyePosition = QVector3D(0, 0, 500);
 	fov = 60.0f;
 }
 
@@ -136,7 +136,7 @@ void GLWidget::mouseMoveEvent(QMouseEvent* event)
 
 void GLWidget::wheelEvent(QWheelEvent* event)
 {
-	eyePosition.setZ(eyePosition.z() - event->delta() * 0.1);
+	eyePosition.setZ(eyePosition.z() - event->delta() * 0.3);
 	update();
 }
 
