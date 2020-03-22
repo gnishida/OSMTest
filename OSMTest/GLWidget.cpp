@@ -185,7 +185,7 @@ void GLWidget::loadOSM(const QString& filename)
 			renderingManager->addObject("images/facade6.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
 		}
 		else {
-			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade7.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
 		}
 
 		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
