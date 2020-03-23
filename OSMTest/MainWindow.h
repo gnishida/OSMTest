@@ -21,6 +21,7 @@ protected:
 
 public slots:
 	void onOpen();
+	void onCamera();
 
 private:
 	Ui::MainWindowClass ui;

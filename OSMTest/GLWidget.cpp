@@ -10,7 +10,7 @@ GLWidget::GLWidget(QWidget *parent)
 {
 	renderingManager = nullptr;
 	eyePosition = QVector3D(0, 0, 500);
-	fov = 60.0f;
+	fov = 90.0f;
 }
 
 GLWidget::~GLWidget()
@@ -52,6 +52,19 @@ void GLWidget::translateBy(float dx, float dy)
 	tmpy *= scale;
 	translation.setX(translation.x() + tmpx);
 	translation.setY(translation.y() + tmpy);
+	update();
+}
+
+void GLWidget::setCamera(double latitude, double longitude, float orientation, float fov)
+{
+	glm::vec2 cameraPos = OSMImporter::convertLatLonToUTM(latitude, longitude) - offsetTranslation;
+	translation.setX(-cameraPos.x);
+	translation.setY(-cameraPos.y);
+
+	eyePosition.setZ(30.0f);
+	rotation = QVector3D(-85, 0, orientation);
+	this->fov = fov;
+
 	update();
 }
 
@@ -136,7 +149,7 @@ void GLWidget::mouseMoveEvent(QMouseEvent* event)
 
 void GLWidget::wheelEvent(QWheelEvent* event)
 {
-	eyePosition.setZ(eyePosition.z() - event->delta() * 0.3);
+	eyePosition.setZ(eyePosition.z() - event->delta() * 0.2);
 	update();
 }
 
@@ -148,19 +161,19 @@ void GLWidget::loadOSM(const QString& filename)
 	std::vector<BuildingParam> buildingParams;
 	OSMImporter::import(filename, minX, minY, maxX, maxY, buildingParams);
 
-	float translate_x = (minX + maxX) / 2;
-	float translate_y = (minY + maxY) / 2;
+	offsetTranslation.x = (minX + maxX) / 2;
+	offsetTranslation.y = (minY + maxY) / 2;
 
 	for (auto& buildingParam : buildingParams) {
 		for (auto& coord : buildingParam.footprint) {
-			coord.x = coord.x - translate_x;
-			coord.y = coord.y - translate_y;
+			coord.x = coord.x - offsetTranslation.x;
+			coord.y = coord.y - offsetTranslation.y;
 		}
 	}
-	minX -= translate_x;
-	minY -= translate_y;
-	maxX -= translate_x;
-	maxY -= translate_y;
+	minX -= offsetTranslation.x;
+	minY -= offsetTranslation.y;
+	maxX -= offsetTranslation.x;
+	maxY -= offsetTranslation.y;
 
 	renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createRectangle(maxX - minX, maxY - minY));
 
@@ -190,5 +203,6 @@ void GLWidget::loadOSM(const QString& filename)
 
 		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
 	}
+
 	update();
 }

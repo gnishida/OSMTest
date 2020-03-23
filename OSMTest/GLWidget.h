@@ -5,6 +5,7 @@
 
 #include <QOpenGLWidget>
 #include <QVector3D>
+#include <glm/glm.hpp>
 
 class GLWidget : public QOpenGLWidget
 {
@@ -15,6 +16,7 @@ private:
 	QVector3D eyePosition;
 	QVector3D rotation;
 	QVector3D translation;
+	glm::vec2 offsetTranslation;
 	RenderingManager* renderingManager;
 	float fov;
 
@@ -30,6 +32,7 @@ public:
 	QSize sizeHint() const override;
 	void rotateBy(const QVector3D& rotationAngle);
 	void translateBy(float x, float y);
+	void setCamera(double latitude, double longitude, float orientation, float fov);
 
 	void keyPressEvent(QKeyEvent* e);
 	void keyReleaseEvent(QKeyEvent* e);
