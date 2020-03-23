@@ -149,7 +149,8 @@ void GLWidget::mouseMoveEvent(QMouseEvent* event)
 
 void GLWidget::wheelEvent(QWheelEvent* event)
 {
-	eyePosition.setZ(eyePosition.z() - event->delta() * 0.2);
+	float newZ = std::max(1.0f, eyePosition.z() - event->delta() * eyePosition.z() * 0.0006f);
+	eyePosition.setZ(newZ);
 	update();
 }
 
