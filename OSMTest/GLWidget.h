@@ -14,6 +14,7 @@ class GLWidget : public QOpenGLWidget
 private:
 	QPoint lastPos;
 	QVector3D eyePosition;
+	QVector3D lookAtPosition;
 	QVector3D rotation;
 	QVector3D translation;
 	glm::vec2 offsetTranslation;

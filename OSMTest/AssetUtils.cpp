@@ -50,7 +50,7 @@ std::vector<Vertex> AssetUtils::createSphere(float radius) {
 	return vertices;
 }
 
-std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygon, float height) {
+std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygon, float baseHeight, float height) {
 	std::vector<Vertex> vertices;
 	const int NUM_VERTEX = polygon.size();
 
@@ -62,13 +62,13 @@ std::vector<Vertex> AssetUtils::createPrism(const std::vector<glm::vec2>& polygo
 		const float& y2 = polygon[next].y;
 		const float length = glm::length(glm::vec2(x2 - x1, y2 - y1));
 
-		vertices.push_back({ x1, y1, 0, 0, 0 });
-		vertices.push_back({ x2, y2, 0, length / 11.0f, 0 });
-		vertices.push_back({ x2, y2, height, length / 11.0f, height / 10.0f });
+		vertices.push_back({ x1, y1, baseHeight, 0, 0 });
+		vertices.push_back({ x2, y2, baseHeight, length / 11.0f, 0 });
+		vertices.push_back({ x2, y2, baseHeight + height, length / 11.0f, height / 10.0f });
 
-		vertices.push_back({ x1, y1, 0, 0, 0 });
-		vertices.push_back({ x2, y2, height, length / 11.0f, height / 10.0f });
-		vertices.push_back({ x1, y1, height, 0, height / 10.0f });
+		vertices.push_back({ x1, y1, baseHeight, 0, 0 });
+		vertices.push_back({ x2, y2, baseHeight + height, length / 11.0f, height / 10.0f });
+		vertices.push_back({ x1, y1, baseHeight + height, 0, height / 10.0f });
 	}
 
 	return vertices;

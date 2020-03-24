@@ -9,7 +9,9 @@
 GLWidget::GLWidget(QWidget *parent)
 {
 	renderingManager = nullptr;
-	eyePosition = QVector3D(0, 0, 500);
+	eyePosition = QVector3D(0.0f, 3.0f, 500.0f);
+	lookAtPosition.setY(3.0f);
+
 	fov = 90.0f;
 }
 
@@ -42,10 +44,7 @@ void GLWidget::rotateBy(const QVector3D& rotationAngle)
 void GLWidget::translateBy(float dx, float dy)
 {
 	const float theta = glm::radians(rotation.z());
-	const float viewX = std::tan(glm::radians(rotation.x())) * eyePosition.z();
-	const float viewY = std::tan(glm::radians(rotation.y())) * eyePosition.z();
-	const float adjustedZ = sqrt(viewX * viewX + viewY * viewY + eyePosition.z() * eyePosition.z());
-	const float scale = 2 * adjustedZ * std::tan(glm::radians(fov) / 2) / width();
+	const float scale = 2 * std::max(10.0f, eyePosition.z()) * std::tan(glm::radians(fov) / 2) / width();
 	float tmpx = dx * std::cos(theta) + dy * std::sin(theta);
 	float tmpy = -dx * std::sin(theta) + dy * std::cos(theta);
 	tmpx *= scale;
@@ -61,8 +60,8 @@ void GLWidget::setCamera(double latitude, double longitude, float orientation, f
 	translation.setX(-cameraPos.x);
 	translation.setY(-cameraPos.y);
 
-	eyePosition.setZ(30.0f);
-	rotation = QVector3D(-85, 0, orientation);
+	eyePosition.setZ(0.1f);
+	rotation = QVector3D(-90.0f, 0, orientation);
 	this->fov = fov;
 
 	update();
@@ -112,7 +111,7 @@ void GLWidget::paintGL()
 	model.translate(translation.x(), translation.y(), translation.z());
 
 	QMatrix4x4 view;
-	view.lookAt(eyePosition, QVector3D(0.0, 0.0, 0.0), QVector3D(0.0, 1.0, 0.0));
+	view.lookAt(eyePosition, lookAtPosition, QVector3D(0.0, 1.0, 0.0));
 
 	QMatrix4x4 proj;
 	proj.perspective(fov, (float)width() / height(), 0.1, 10000.0);
@@ -176,30 +175,30 @@ void GLWidget::loadOSM(const QString& filename)
 	maxX -= offsetTranslation.x;
 	maxY -= offsetTranslation.y;
 
-	renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createRectangle(maxX - minX, maxY - minY));
+	renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createRectangle(maxX - minX, maxY - minY, 0));
 
 	for (const auto& buildingParam : buildingParams) {
 		int random = rand() % 7;
 		if (random == 0) {
-			renderingManager->addObject("images/facade.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 		else if (random == 1) {
-			renderingManager->addObject("images/facade2.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade2.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 		else if (random == 2) {
-			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade3.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 		else if (random == 3) {
-			renderingManager->addObject("images/facade4.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade4.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 		else if (random == 4) {
-			renderingManager->addObject("images/facade5.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade5.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 		else if (random == 5) {
-			renderingManager->addObject("images/facade6.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade6.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 		else {
-			renderingManager->addObject("images/facade7.jpg", AssetUtils::createPrism(buildingParam.footprint, buildingParam.height));
+			renderingManager->addObject("images/facade7.jpg", AssetUtils::createPrism(buildingParam.footprint, 0, buildingParam.height));
 		}
 
 		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
