@@ -5,6 +5,7 @@
 #include "OSMImporter.h"
 #include <algorithm>
 #include <stdlib.h>
+#include <iostream>
 
 GLWidget::GLWidget(QWidget *parent)
 {
@@ -174,6 +175,45 @@ void GLWidget::loadOSM(const QString& filename)
 	minY -= offsetTranslation.y;
 	maxX -= offsetTranslation.x;
 	maxY -= offsetTranslation.y;
+
+
+
+	glm::vec2 test = OSMImporter::convertLatLonToUTM(35.645313, 139.929831);
+	test -= offsetTranslation;
+	int b_ind = -1;
+	int v_ind = -1;
+	float minimum = std::numeric_limits<float>::max();
+	for (int i = 0; i < buildingParams.size(); i++) {
+		for (int j = 0; j < buildingParams[i].footprint.size(); j++) {
+			if (glm::length(buildingParams[i].footprint[j] - test) < minimum) {
+				b_ind = i;
+				v_ind = j;
+			}
+		}
+	}
+
+	QVector3D temp(buildingParams[b_ind].footprint[v_ind].x, buildingParams[b_ind].footprint[v_ind].y, 0);
+	QVector3D temp2(buildingParams[b_ind].footprint[v_ind].x, buildingParams[b_ind].footprint[v_ind].y, buildingParams[b_ind].height);
+
+	QMatrix4x4 model;
+	model.rotate(rotation.x(), 1.0f, 0.0f, 0.0f);
+	model.rotate(rotation.y(), 0.0f, 1.0f, 0.0f);
+	model.rotate(rotation.z(), 0.0f, 0.0f, 1.0f);
+	model.translate(translation.x(), translation.y(), translation.z());
+
+	QMatrix4x4 view;
+	view.lookAt(eyePosition, lookAtPosition, QVector3D(0.0, 1.0, 0.0));
+
+	QMatrix4x4 proj;
+	proj.perspective(fov, (float)width() / height(), 0.1, 10000.0);
+
+	QVector4D result = proj * view * model * QVector4D(temp, 1);
+
+	glm::vec2 result2(result.x() / result.w(), result.y() / result.w());
+
+	std::cout << (1 + result2.x) * width() / 2 << ", " << (1 - result2.y) * height() / 2 << endl;
+
+
 
 	renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createRectangle(maxX - minX, maxY - minY, 0));
 
