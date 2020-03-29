@@ -136,6 +136,12 @@ void OSMImporter::readTag(const QDomElement& element, QString& name, QString& ty
 	}
 	else if (k == "building") {
 		type = "building";
+		if (v == "yes") {
+			subtype = "building";
+		}
+		else {
+			subtype = v;
+		}
 	}
 	else if (k == "building:levels") {
 		height = v.toInt() * 3.5f;
