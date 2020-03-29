@@ -14,28 +14,28 @@
 typedef CGAL::Exact_predicates_inexact_constructions_kernel K;
 typedef CGAL::Partition_traits_2<K> Traits;
 
-std::vector<Vertex> AssetUtils::createSphere(float radius) {
+std::vector<Vertex> AssetUtils::createSphere(float x, float y, float z, float radius) {
 	std::vector<Vertex> vertices;
 
-	const int HOR_SLICES = 128;
-	const int VERT_SLICES = 64;
+	const int HOR_SLICES = 64;
+	const int VERT_SLICES = 32;
 
 	const float M_PI = atan(1) * 4;
 	const float r = 0.2;
 	for (int j = 0; j < VERT_SLICES; j++) {
-		const float z_coord = r * sin(j * M_PI / VERT_SLICES - M_PI / 2);
-		const float z2_coord = r * sin((j + 1) * M_PI / VERT_SLICES - M_PI / 2);
+		const float z_coord = z + r * sin(j * M_PI / VERT_SLICES - M_PI / 2);
+		const float z2_coord = z + r * sin((j + 1) * M_PI / VERT_SLICES - M_PI / 2);
 		const float new_r = r * cos(j * M_PI / VERT_SLICES - M_PI / 2);
 		const float new_r2 = r * cos((j + 1) * M_PI / VERT_SLICES - M_PI / 2);
 		for (int i = 0; i < HOR_SLICES; i++) {
-			const float x_coord = new_r * cos(i * 2 * M_PI / HOR_SLICES);
-			const float y_coord = new_r * sin(i * 2 * M_PI / HOR_SLICES);
-			const float x2_coord = new_r * cos((i + 1) * 2 * M_PI / HOR_SLICES);
-			const float y2_coord = new_r * sin((i + 1) * 2 * M_PI / HOR_SLICES);
-			const float x4_coord = new_r2 * cos(i * 2 * M_PI / HOR_SLICES);
-			const float y4_coord = new_r2 * sin(i * 2 * M_PI / HOR_SLICES);
-			const float x3_coord = new_r2 * cos((i + 1) * 2 * M_PI / HOR_SLICES);
-			const float y3_coord = new_r2 * sin((i + 1) * 2 * M_PI / HOR_SLICES);
+			const float x_coord = x + new_r * cos(i * 2 * M_PI / HOR_SLICES);
+			const float y_coord = y + new_r * sin(i * 2 * M_PI / HOR_SLICES);
+			const float x2_coord = x + new_r * cos((i + 1) * 2 * M_PI / HOR_SLICES);
+			const float y2_coord = y + new_r * sin((i + 1) * 2 * M_PI / HOR_SLICES);
+			const float x4_coord = x + new_r2 * cos(i * 2 * M_PI / HOR_SLICES);
+			const float y4_coord = y + new_r2 * sin(i * 2 * M_PI / HOR_SLICES);
+			const float x3_coord = x + new_r2 * cos((i + 1) * 2 * M_PI / HOR_SLICES);
+			const float y3_coord = y + new_r2 * sin((i + 1) * 2 * M_PI / HOR_SLICES);
 
 			vertices.push_back({ x_coord, y_coord, z_coord, 1 - (float)i / HOR_SLICES, (float)j / VERT_SLICES });
 			vertices.push_back({ x2_coord, y2_coord, z_coord, 1 - (float)(i + 1) / HOR_SLICES, (float)j / VERT_SLICES });

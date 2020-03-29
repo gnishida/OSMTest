@@ -7,7 +7,7 @@
 class AssetUtils
 {
 public:
-	static std::vector<Vertex> createSphere(float radius);
+	static std::vector<Vertex> createSphere(float x, float y, float z, float radius);
 	static std::vector<Vertex> createPrism(const std::vector<glm::vec2>& polygon, float baseHeight, float height);
 	static std::vector<Vertex> createRectangle(float width, float length, float height);
 	static std::vector<Vertex> createConvexPolygon(const std::vector<glm::vec2>& polygon, float height);

@@ -117,6 +117,11 @@ void GLWidget::paintGL()
 	QMatrix4x4 proj;
 	proj.perspective(fov, (float)width() / height(), 0.1, 10000.0);
 
+	QVector4D result = proj * view * model * QVector4D(buildingVertex, 1);
+	glm::vec3 result2(result.x() / result.w(), result.y() / result.w(), result.z() / result.w());
+
+	std::cout << (1 + result2.x) * width() / 2 << ", " << (1 - result2.y) * height() / 2 << std::endl;
+
 	renderingManager->render(proj * view * model);
 }
 
@@ -178,42 +183,23 @@ void GLWidget::loadOSM(const QString& filename)
 
 
 
-	glm::vec2 test = OSMImporter::convertLatLonToUTM(35.645313, 139.929831);
+	glm::vec2 test = OSMImporter::convertLatLonToUTM(35.645401, 139.929761);
 	test -= offsetTranslation;
 	int b_ind = -1;
 	int v_ind = -1;
 	float minimum = std::numeric_limits<float>::max();
 	for (int i = 0; i < buildingParams.size(); i++) {
 		for (int j = 0; j < buildingParams[i].footprint.size(); j++) {
-			if (glm::length(buildingParams[i].footprint[j] - test) < minimum) {
+			float dist = glm::length(buildingParams[i].footprint[j] - test);
+			if (dist < minimum) {
 				b_ind = i;
 				v_ind = j;
+				minimum = dist;
 			}
 		}
 	}
 
-	QVector3D temp(buildingParams[b_ind].footprint[v_ind].x, buildingParams[b_ind].footprint[v_ind].y, 0);
-	QVector3D temp2(buildingParams[b_ind].footprint[v_ind].x, buildingParams[b_ind].footprint[v_ind].y, buildingParams[b_ind].height);
-
-	QMatrix4x4 model;
-	model.rotate(rotation.x(), 1.0f, 0.0f, 0.0f);
-	model.rotate(rotation.y(), 0.0f, 1.0f, 0.0f);
-	model.rotate(rotation.z(), 0.0f, 0.0f, 1.0f);
-	model.translate(translation.x(), translation.y(), translation.z());
-
-	QMatrix4x4 view;
-	view.lookAt(eyePosition, lookAtPosition, QVector3D(0.0, 1.0, 0.0));
-
-	QMatrix4x4 proj;
-	proj.perspective(fov, (float)width() / height(), 0.1, 10000.0);
-
-	QVector4D result = proj * view * model * QVector4D(temp, 1);
-
-	glm::vec2 result2(result.x() / result.w(), result.y() / result.w());
-
-	std::cout << (1 + result2.x) * width() / 2 << ", " << (1 - result2.y) * height() / 2 << endl;
-
-
+	buildingVertex = QVector3D(buildingParams[b_ind].footprint[v_ind].x, buildingParams[b_ind].footprint[v_ind].y, 0);
 
 	renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createRectangle(maxX - minX, maxY - minY, 0));
 
@@ -243,6 +229,9 @@ void GLWidget::loadOSM(const QString& filename)
 
 		renderingManager->addObject("images/shin_urayasu.jpg", AssetUtils::createPolygon(buildingParam.footprint, buildingParam.height, minX, minY, maxX, maxY));
 	}
+
+	renderingManager->addObject("images/red.jpg", AssetUtils::createSphere(buildingVertex.x(), buildingVertex.y(), buildingVertex.z(), 1));
+	
 
 	update();
 }

@@ -20,6 +20,7 @@ private:
 	glm::vec2 offsetTranslation;
 	RenderingManager* renderingManager;
 	float fov;
+	QVector3D buildingVertex;
 
 	// key status
 	bool shiftPressed;
